@@ -230,7 +230,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im utweb.exe
 
-set firefoxest=lhmu74a9.default-release-1625660822480
+set firefoxest=d7wewrt2.default-release-1641919218397
 
 cls
 

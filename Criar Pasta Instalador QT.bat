@@ -27,7 +27,7 @@ cls
 set /p opc=Deseja mesmo criar a pasta de debug pra deploy do programa? [S/N] 
 
 if /i %opc%==S (
-cd C:\Qt\5.13.0\mingw73_32\
+cd C:\Qt\6.2.2\mingw_64\bin
 
 xcopy /E /C /H bin %userprofile%\Desktop\bin\
 
