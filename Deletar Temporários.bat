@@ -74,7 +74,23 @@ net stop edgeupdate
 
 net stop edgeupdatem
 
+net stop MSSQLSERVER
+
+net stop SQLSERVERAGENT
+
+net stop SQLEXPRESS
+
+net stop SQLAgent$SQLEXPRESS
+
+net stop SQLBrowser
+
+net stop SQLTELEMETRY$SQLEXPRESS
+
+net stop SQLWriter
+
 cls
+
+taskkill /f /t /im setup.exe
 
 taskkill /f /t /im RdrCEF.exe
 
@@ -139,6 +155,8 @@ taskkill /f /t /im devenv.exe
 taskkill /f /t /im sqlceip.exe
 
 taskkill /f /t /im sqlservr.exe
+
+taskkill /f /t /im sqlwriter.exe
 
 taskkill /f /t /im Code.exe
 

@@ -4,7 +4,7 @@ chcp 1252
 
 title Executar Aplicativos Ruby
 
-color 4f
+color 4F
 
 cls
 

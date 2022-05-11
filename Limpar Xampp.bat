@@ -18,7 +18,21 @@ cd %userprofile%/Downloads
 
 move 127_0_0_1.sql %userprofile%\Desktop
 
-cd C:\Xampp
+cd C:\Xampp\htdocs
+
+rmdir /s /q dashboard
+
+rmdir /s /q img
+
+rmdir /s /q webalizer
+
+rmdir /s /q xampp
+
+del /f /s /q applications.html
+
+del /f /s /q bitnami.css
+
+cd ..
 
 move htdocs %userprofile%\Desktop
 
