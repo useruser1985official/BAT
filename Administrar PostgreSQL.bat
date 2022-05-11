@@ -23,6 +23,12 @@ if /i %opc%==I (
 net start postgresql-x64-12
 ) else if /i %opc%==P (
 net stop postgresql-x64-12
+
+taskkill /f /t /im pgAdmin4.exe
+
+taskkill /f /t /im postgres.exe
+
+taskkill /f /t /im pg_ctl.exe
 ) else (
 goto tent
 )

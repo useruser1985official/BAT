@@ -84,6 +84,8 @@ net stop SQLAgent$SQLEXPRESS
 
 net stop SQLBrowser
 
+net stop SQLTELEMETRY
+
 net stop SQLTELEMETRY$SQLEXPRESS
 
 net stop SQLWriter
@@ -158,6 +160,10 @@ taskkill /f /t /im sqlservr.exe
 
 taskkill /f /t /im sqlwriter.exe
 
+taskkill /f /t /im ScenarioEngine.exe
+
+taskkill /f /t /im LandingPage.exe
+
 taskkill /f /t /im Code.exe
 
 taskkill /f /t /im netbeans64.exe
@@ -185,6 +191,8 @@ taskkill /f /t /im mysqld.exe
 taskkill /f /t /im pgAdmin4.exe
 
 taskkill /f /t /im postgres.exe
+
+taskkill /f /t /im pg_ctl.exe
 
 taskkill /f /t /im stackbuilder.exe
 
