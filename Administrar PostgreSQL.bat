@@ -33,6 +33,8 @@ taskkill /f /t /im pg_ctl.exe
 goto tent
 )
 
+echo.
+
 echo Operação Realizada com Êxito!
 
 pause>nul

@@ -28,6 +28,8 @@ taskkill /f /t /im opera.exe
 
 taskkill /f /t /im launcher.exe
 
+taskkill /f /t /im opera_autoupdate.exe
+
 cd %localappdata%/Programs/Opera
 
 del *.old

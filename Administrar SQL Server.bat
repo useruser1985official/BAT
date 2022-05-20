@@ -65,6 +65,8 @@ taskkill /f /t /im LandingPage.exe
 goto tent
 )
 
+echo.
+
 echo Operação Realizada com Êxito!
 
 pause>nul
