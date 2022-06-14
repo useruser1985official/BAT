@@ -96,6 +96,12 @@ taskkill /f /t /im setup.exe
 
 taskkill /f /t /im RdrCEF.exe
 
+taskkill /f /t /im Acrobat.exe
+
+taskkill /f /t /im AcroCEF.exe
+
+taskkill /f /t /im AdobeARM.exe
+
 taskkill /f /t /im AcrobatNotificationClient.exe
 
 taskkill /f /t /im GoogleUpdate.exe
@@ -310,23 +316,29 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService15 /v St
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService15 /v DelayedAutoStart /t REG_DWORD /d 1 /f
 
+schtasks /delete /tn "Adobe Acrobat Update Task" /f
+
 schtasks /delete /tn "CCleaner Update" /f
 
 schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
 
-schtasks /delete /tn "S-1-5-21-16109959-1652163829-3163686721-1003" /f
+schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn "GoogleUpdateTaskMachineCore" /f
+schtasks /delete /tn GoogleUpdateTaskMachineCore /f
 
-schtasks /delete /tn "GoogleUpdateTaskMachineUA" /f
+schtasks /delete /tn GoogleUpdateTaskMachineUA /f
 
-schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore" /f
+schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineCore /f
 
-schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineUA" /f
+schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineUA /f
+
+schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
+
+schtasks /delete /tn IObitSelfCheckTask /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 

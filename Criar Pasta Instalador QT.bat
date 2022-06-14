@@ -11,7 +11,7 @@ cls
 set /p opc=Deseja mesmo criar a pasta pra preparar o instalador? [S/N] 
 
 if /i %opc%==S (
-cd C:\Qt\Tools\QtInstallerFramework\3.1\examples\
+cd C:\Qt\Tools\QtInstallerFramework\4.3\examples\
 
 xcopy /E /C /H startmenu %userprofile%\Desktop\startmenu\
 
