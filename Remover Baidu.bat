@@ -30,6 +30,10 @@ cd C:/Program Files
 
 rmdir /s /q Baidu
 
+cd C:/Program Files (x86)
+
+rmdir /s /q Baidu
+
 cd C:/ProgramData
 
 rmdir /s /q Baidu

@@ -52,6 +52,8 @@ del /f mbar-1.10.3.1001.exe
 
 del /f MBSetup.exe
 
+del /f mb4-setup-consumer-*.exe
+
 cd %programfiles%
 
 rmdir /s /q Malwarebytes

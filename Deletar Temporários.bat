@@ -122,6 +122,8 @@ taskkill /f /t /im python.exe
 
 taskkill /f /t /im pythonw.exe
 
+taskkill /f /t /im perl.exe
+
 taskkill /f /t /im ruby.exe
 
 taskkill /f /t /im VBoxSVC.exe
@@ -385,7 +387,7 @@ del /s /q /f servicing\LCU
 echo.
 
 if /i %cach%==S (
-echo O cachê dos navegadores foram limpos!
+echo O cache dos navegadores foram limpos!
 )
 
 if /i %pref%==S (

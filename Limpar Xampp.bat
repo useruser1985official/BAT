@@ -28,9 +28,9 @@ rmdir /s /q webalizer
 
 rmdir /s /q xampp
 
-del /f /s /q applications.html
+del /f applications.html
 
-del /f /s /q bitnami.css
+del /f bitnami.css
 
 cd ..
 
