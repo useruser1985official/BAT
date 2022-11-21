@@ -14,6 +14,14 @@ if /i %opc% neq S (
 exit
 )
 
+cls
+
+taskkill /f /t /im httpd.exe
+
+taskkill /f /t /im mysqld.exe
+
+taskkill /f /t /im xampp-control.exe
+
 cd %userprofile%/Downloads
 
 move 127_0_0_1.sql %userprofile%\Desktop

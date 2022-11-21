@@ -76,6 +76,10 @@ reg delete HKLM\Software\Malwarebytes /f
 
 reg delete "HKLM\Software\Malwarebytes Anti-Rootkit" /f
 
+reg delete HKLM\Software\WOW6432Node\Malwarebytes /f
+
+reg delete "HKLM\Software\WOW6432Node\Malwarebytes Anti-Rootkit" /f
+
 reg delete "HKLM\Software\Microsoft\Windows\CurrentVersion\Run\Malwarebytes TrayApp" /f
 
 reg delete HKLM\System\CurrentControlSet\services\MBAMService /f

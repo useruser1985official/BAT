@@ -4,7 +4,7 @@ chcp 1252
 
 title Mover PDFs de Programação
 
-color F4
+color 4F
 
 cls
 

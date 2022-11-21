@@ -8,7 +8,7 @@ title Corrigindo Erros
 
 cls
 
-echo PS: Ã‰ preciso executar esse BAT como administrador!
+echo PS: É preciso executar esse BAT como administrador!
 
 echo.
 

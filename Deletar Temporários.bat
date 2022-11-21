@@ -238,6 +238,8 @@ taskkill /f /t /im IObitLiveUpdate.exe
 
 taskkill /f /t /im PPUninstaller.exe
 
+taskkill /f /t /im AutoSweep.exe
+
 if /i %cach% neq S (
 goto cont
 )
@@ -321,6 +323,8 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService15 /v De
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
 schtasks /delete /tn "CCleaner Update" /f
+
+schtasks /delete /tn "CCleanerCrashReporting" /f
 
 schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
 
