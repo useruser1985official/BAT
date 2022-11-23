@@ -316,9 +316,11 @@ reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v utweb /f
 
 reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v MicrosoftEdgeAutoLaunch_AF623091453CC2E58F15E4A702B7C681 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService15 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService16 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService15 /v DelayedAutoStart /t REG_DWORD /d 1 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService16 /v DelayedAutoStart /t REG_DWORD /d 1 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\AdobeARMservice /v Start /t REG_DWORD /d 4 /f
 
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
