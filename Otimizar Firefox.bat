@@ -8,7 +8,7 @@ color 1E
 
 cls
 
-rem Retirar Kaspersky Extension em HKLM\SOFTWARE\Mozilla\Firefox\Extensions
+:: Retirar Kaspersky Extension em HKLM\SOFTWARE\Mozilla\Firefox\Extensions
 
 set /p otimizar=Deseja corrigir todos os erros de script do Firefox? [S/N] 
 

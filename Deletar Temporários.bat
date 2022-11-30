@@ -326,7 +326,7 @@ schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
 schtasks /delete /tn "CCleaner Update" /f
 
-schtasks /delete /tn "CCleanerCrashReporting" /f
+schtasks /delete /tn CCleanerCrashReporting /f
 
 schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
 
