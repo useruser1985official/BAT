@@ -144,6 +144,8 @@ reg delete HKLM\SOFTWARE\Norton /f
 
 reg delete HKLM\SOFTWARE\Swearware /f
 
+reg delete HKLM\SOFTWARE\Malwarebytes /f
+
 reg delete HKLM\SOFTWARE\TrendMicro\Hijackthis /f
 
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\combofix.exe" /f

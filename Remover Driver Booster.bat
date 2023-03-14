@@ -28,7 +28,7 @@ taskkill /f /im explorer.exe
 
 start explorer.exe
 
-"%programfiles(x86)%\IObit\Driver Booster\6.6.0\unins000.exe"
+"%programfiles(x86)%\IObit\Driver Booster\10.3.0\unins000.exe"
 
 pause
 
@@ -50,9 +50,9 @@ rmdir /s /q "Driver Booster"
 
 cd "%programdata%\Microsoft\Windows\Start Menu\Programs
 
-rmdir /s /q "Driver Booster 8"
+rmdir /s /q "Driver Booster 10"
 
-del /f "C:\Users\Public\Desktop\Driver Booster 8.lnk"
+del /f "C:\Users\Public\Desktop\Driver Booster 10.lnk"
 
 cd "%appdata%\IObit"
 

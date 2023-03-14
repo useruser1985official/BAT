@@ -4,7 +4,7 @@ chcp 1252
 
 title Otimizar Firefox
 
-color 1E
+color 16
 
 cls
 

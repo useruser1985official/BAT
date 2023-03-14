@@ -96,6 +96,12 @@ del /f *.webp
 echo Nenhuma imagem .webp encontrada.
 )
 
+if exist *.avif (
+del /f *.avif
+) else (
+echo Nenhuma imagem .avif encontrada.
+)
+
 echo.
 
 echo Operação Realizada com Êxito!
