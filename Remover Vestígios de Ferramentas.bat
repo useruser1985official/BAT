@@ -158,6 +158,8 @@ reg delete "HKLM\Software\Microsoft\Internet Explorer\Search\SearchAssistant" /f
 
 schtasks /delete /tn AdwCleaner_onReboot /f
 
+schtasks /delete /tn "Remove AdwCleaner Application" /f
+
 del /f /s /q %temp%
 
 cd %windir%
