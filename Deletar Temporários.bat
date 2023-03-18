@@ -138,6 +138,8 @@ taskkill /f /t /im gpg-agent.exe
 
 taskkill /f /t /im gpg-connect-agent.exe
 
+taskkill /f /t /im scdaemon.exe
+
 taskkill /f /t /im dirmngr.exe
 
 taskkill /f /t /im kleopatra.exe
