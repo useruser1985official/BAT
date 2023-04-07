@@ -126,6 +126,8 @@ taskkill /f /t /im perl.exe
 
 taskkill /f /t /im ruby.exe
 
+taskkill /f /t /im VBoxSDS.exe
+
 taskkill /f /t /im VBoxSVC.exe
 
 taskkill /f /t /im VirtualBox.exe
@@ -323,6 +325,8 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService16 /v St
 reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService16 /v DelayedAutoStart /t REG_DWORD /d 1 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\AdobeARMservice /v Start /t REG_DWORD /d 4 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\postgresql-x64-12 /v Start /t REG_DWORD /d 3 /f
 
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
