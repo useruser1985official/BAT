@@ -328,6 +328,16 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\AdobeARMservice /v Start /t REG_D
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\postgresql-x64-12 /v Start /t REG_DWORD /d 3 /f
 
+reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d 3 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdatem /v Start /t REG_DWORD /d 3 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService /v Start /t REG_DWORD /d 4 /f
+
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
 schtasks /delete /tn "CCleaner Update" /f
@@ -355,6 +365,8 @@ schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 schtasks /delete /tn IObitSelfCheckTask /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
+
+powercfg.exe /hibernate off
 
 cls
 
