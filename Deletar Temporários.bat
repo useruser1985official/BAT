@@ -224,6 +224,8 @@ taskkill /f /t /im zenmap.exe
 
 taskkill /f /t /im Wireshark.exe
 
+taskkill /f /t /im PacketTracer.exe
+
 taskkill /f /t /im Havij.exe
 
 taskkill /f /t /im "Unsecure v2015.exe"
