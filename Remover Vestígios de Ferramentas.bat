@@ -32,6 +32,8 @@ del /f ZHPCleaner.lnk
 
 del /f ZHPCleaner.txt
 
+del /f kprm-*.txt
+
 cd C:\Users\%username%\Downloads
 
 del /f Adwcleaner_*.exe
@@ -52,6 +54,10 @@ del /f rkill.exe
 
 del /f SpyDetectFree.zip
 
+del /f delfix_*.exe
+
+del /f kprm_*.exe
+
 rmdir /s /q SpyDetectFree
 
 cd/
@@ -71,6 +77,8 @@ del /f zoek-results.log
 rmdir /s /q AdwCleaner
 
 rmdir /s /q Combofix
+
+rmdir /s /q KPRM
 
 rmdir /s /q KVRT_Data
 
@@ -140,11 +148,15 @@ del /f zoekrun.*
 
 reg delete HKCU\SOFTWARE\ZHP /f
 
+reg delete HKCU\SOFTWARE\Malwarebytes /f
+
 reg delete HKLM\SOFTWARE\Norton /f
 
 reg delete HKLM\SOFTWARE\Swearware /f
 
 reg delete HKLM\SOFTWARE\Malwarebytes /f
+
+reg delete HKLM\SOFTWARE\WOW6432Node\Malwarebytes /f
 
 reg delete HKLM\SOFTWARE\TrendMicro\Hijackthis /f
 
@@ -159,6 +171,8 @@ reg delete "HKLM\Software\Microsoft\Internet Explorer\Search\SearchAssistant" /f
 schtasks /delete /tn AdwCleaner_onReboot /f
 
 schtasks /delete /tn "Remove AdwCleaner Application" /f
+
+schtasks /delete /tn "Uninstall AdwCleaner Application" /f
 
 del /f /s /q %temp%
 

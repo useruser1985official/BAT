@@ -20,9 +20,9 @@ cls
 exit
 )
 
-ipconfig /release "Conexão Local"
+ipconfig /release "Ethernet"
 
-ipconfig /release6 "Conexão Local"
+ipconfig /release6 "Ethernet"
 
 ipconfig /flushdns
 
@@ -36,9 +36,9 @@ net start dhcp
 
 ipconfig /registerdns
 
-ipconfig /renew "Conexão Local"
+ipconfig /renew "Ethernet"
 
-ipconfig /renew6 "Conexão Local"
+ipconfig /renew6 "Ethernet"
 
 arp /a /d
 

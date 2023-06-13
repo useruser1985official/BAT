@@ -238,6 +238,8 @@ taskkill /f /t /im plugin-container.exe
 
 taskkill /f /t /im PubMonitor.exe
 
+taskkill /f /t /im PubPlatform.exe
+
 taskkill /f /t /im AutoUpdate.exe
 
 taskkill /f /t /im IObitLiveUpdate.exe
@@ -270,7 +272,7 @@ taskkill /f /t /im SkypeBackgroundHost.exe
 
 taskkill /f /t /im SkypeBridge.exe
 
-taskkill /f /t /im utweb.exe
+taskkill /f /t /im transmission-qt.exe
 
 set firefoxest=d7wewrt2.default-release-1641919218397
 
@@ -369,6 +371,8 @@ schtasks /delete /tn IObitSelfCheckTask /f
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 
 powercfg.exe /hibernate off
+
+:: del /f /a:h %localappdata%\IconCache.db
 
 cls
 
