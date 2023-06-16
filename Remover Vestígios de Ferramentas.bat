@@ -82,6 +82,8 @@ rmdir /s /q KPRM
 
 rmdir /s /q KVRT_Data
 
+rmdir /s /q KVRT2020_Data
+
 rmdir /s /q NPE
 
 rmdir /s /q Qoobox
