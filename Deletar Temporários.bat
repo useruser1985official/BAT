@@ -226,6 +226,10 @@ taskkill /f /t /im Wireshark.exe
 
 taskkill /f /t /im PacketTracer.exe
 
+taskkill /f /t /im iTopVPN.exe
+
+taskkill /f /t /im iTopVPNMini.exe
+
 taskkill /f /t /im Havij.exe
 
 taskkill /f /t /im "Unsecure v2015.exe"
@@ -367,6 +371,12 @@ schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
 schtasks /delete /tn IObitSelfCheckTask /f
+
+schtasks /delete /tn iTopVPN_Scheduler_eu /f
+
+schtasks /delete /tn iTopVPN_SkipUAC_eu /f
+
+schtasks /delete /tn iTopVPN_Update_eu /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 
