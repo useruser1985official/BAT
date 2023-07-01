@@ -148,6 +148,12 @@ del /f zoek.*
 
 del /f zoekrun.*
 
+cd drivers
+
+del /f klupd_*_mark.sys
+
+del /f klupd_*_klark.sys
+
 reg delete HKCU\SOFTWARE\ZHP /f
 
 reg delete HKCU\SOFTWARE\Malwarebytes /f

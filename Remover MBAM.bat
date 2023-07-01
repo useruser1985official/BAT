@@ -70,6 +70,8 @@ rmdir /s /q mbam
 
 rmdir /s /q mbamtray
 
+rmdir /s /q Malwarebytes
+
 reg delete HKCU\Software\Malwarebytes /f
 
 reg delete HKLM\Software\Malwarebytes /f
