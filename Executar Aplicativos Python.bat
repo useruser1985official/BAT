@@ -17,7 +17,7 @@ set /p opc=Deseja ir para a pasta de projetos grandes? [S/N]
 cls
 
 if /i %opc%==S (
-cd "C:\Aplicações\Python Scripts\Projetos Grandes em Python"
+cd "C:\Aplicações\Python Scripts\Projetos Grandes"
 
 dir /a:d
 ) else (
@@ -28,7 +28,7 @@ echo.
 
 set /p proj=Digite o nome do projeto (se tiver espaço, coloque aspas): 
 
-cd "C:\Aplicações\Python Scripts\Projetos Grandes em Python\%proj%"
+cd "C:\Aplicações\Python Scripts\Projetos Grandes\%proj%"
 
 :simp
 
