@@ -382,8 +382,6 @@ schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 
 powercfg.exe /hibernate off
 
-:: del /f /a:h %localappdata%\IconCache.db
-
 cls
 
 cd %programdata%
@@ -419,6 +417,8 @@ del /s /q /f Prefetch
 del /s /q /f Temp
 
 if /i %upd%==S (
+del /f /a:h %localappdata%\IconCache.db
+
 del /s /q /f SoftwareDistribution\Download
 
 del /s /q /f servicing\LCU
