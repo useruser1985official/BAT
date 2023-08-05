@@ -226,6 +226,8 @@ taskkill /f /t /im Wireshark.exe
 
 taskkill /f /t /im PacketTracer.exe
 
+taskkill /f /t /im visualg30.exe
+
 taskkill /f /t /im iTopVPN.exe
 
 taskkill /f /t /im iTopVPNMini.exe
@@ -259,6 +261,8 @@ goto cont
 taskkill /f /t /im iexplore.exe
 
 taskkill /f /t /im msedge.exe
+
+taskkill /f /t /im msedgewebview2.exe
 
 taskkill /f /t /im firefox.exe
 
