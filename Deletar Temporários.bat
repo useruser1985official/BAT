@@ -106,6 +106,10 @@ taskkill /f /t /im AcrobatNotificationClient.exe
 
 taskkill /f /t /im GoogleUpdate.exe
 
+taskkill /f /t /im GoogleCrashHandler.exe
+
+taskkill /f /t /im GoogleCrashHandler64.exe
+
 taskkill /f /t /im software_reporter_tool.exe
 
 taskkill /f /t /im opera_autoupdate.exe
@@ -357,6 +361,8 @@ schtasks /delete /tn "CCleaner Update" /f
 schtasks /delete /tn CCleanerCrashReporting /f
 
 schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
+
+schtasks /delete /tn "Opera scheduled assistant Autoupdate 1582737323" /f
 
 schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 

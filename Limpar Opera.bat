@@ -40,6 +40,8 @@ start %localappdata%/Programs/Opera
 
 schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
 
+schtasks /delete /tn "Opera scheduled assistant Autoupdate 1582737323" /f
+
 echo.
 
 echo Operação Concluída com Êxito!
