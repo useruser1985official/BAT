@@ -2,7 +2,7 @@
 
 chcp 1252
 
-color 9F
+color F1
 
 cls
 
@@ -22,13 +22,13 @@ echo.
 
 set /p op=Digite Aqui sua Opção: 
 
-if %op% neq 1 (
+if %op% equ 1 (
 cls & goto A
-) else if %op% neq 2 (
+) else if %op% equ 2 (
 cls & goto B
-) else if %op% neq 3 (
+) else if %op% equ 3 (
 cls & goto C
-) else if %op% neq 0 (
+) else if %op% equ 0 (
 exit
 )
 

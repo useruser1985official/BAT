@@ -54,7 +54,7 @@ net stop ssh-agent
 
 net stop sshd
 
-net stop postgresql-x64-12
+net stop postgresql-x64-14
 
 net stop RemoteRegistry
 
@@ -342,7 +342,7 @@ reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v MicrosoftEdgeAu
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\AdobeARMservice /v Start /t REG_DWORD /d 4 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\postgresql-x64-12 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\postgresql-x64-14 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
 
