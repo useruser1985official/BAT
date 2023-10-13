@@ -76,17 +76,33 @@ net stop edgeupdatem
 
 net stop MSSQLSERVER
 
+net stop MSSQL$SQLEXPRESS
+
+net stop MSSQL$SQLEXPRESS01
+
+net stop MSSQL$SQLEXPRESS02
+
 net stop SQLSERVERAGENT
 
 net stop SQLEXPRESS
 
+net stop SQLEXPRESS01
+
+net stop SQLEXPRESS02
+
 net stop SQLAgent$SQLEXPRESS
+
+net stop SQLAgent$SQLEXPRESS01
+
+net stop SQLAgent$SQLEXPRESS02
 
 net stop SQLBrowser
 
 net stop SQLTELEMETRY
 
 net stop SQLTELEMETRY$SQLEXPRESS
+
+net stop SQLTELEMETRY$SQLEXPRESS01
 
 net stop SQLWriter
 

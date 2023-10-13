@@ -22,11 +22,25 @@ set /p opc=Deseja iniciar ou parar o SQL Server? [I/P]
 if /i %opc%==I (
 net start MSSQLSERVER
 
+net start MSSQL$SQLEXPRESS
+
+net start MSSQL$SQLEXPRESS01
+
+net start MSSQL$SQLEXPRESS02
+
 net start SQLSERVERAGENT
 
 net start SQLEXPRESS
 
+net start SQLEXPRESS01
+
+net start SQLEXPRESS02
+
 net start SQLAgent$SQLEXPRESS
+
+net start SQLAgent$SQLEXPRESS01
+
+net start SQLAgent$SQLEXPRESS02
 
 net start SQLBrowser
 
@@ -34,21 +48,39 @@ net start SQLTELEMETRY
 
 net start SQLTELEMETRY$SQLEXPRESS
 
+net start SQLTELEMETRY$SQLEXPRESS01
+
 net start SQLWriter
 ) else if /i %opc%==P (
 net stop MSSQLSERVER
+
+net stop MSSQL$SQLEXPRESS
+
+net stop MSSQL$SQLEXPRESS01
+
+net stop MSSQL$SQLEXPRESS02
 
 net stop SQLSERVERAGENT
 
 net stop SQLEXPRESS
 
+net stop SQLEXPRESS01
+
+net stop SQLEXPRESS02
+
 net stop SQLAgent$SQLEXPRESS
+
+net stop SQLAgent$SQLEXPRESS01
+
+net stop SQLAgent$SQLEXPRESS02
 
 net stop SQLBrowser
 
 net stop SQLTELEMETRY
 
 net stop SQLTELEMETRY$SQLEXPRESS
+
+net stop SQLTELEMETRY$SQLEXPRESS01
 
 net stop SQLWriter
 
