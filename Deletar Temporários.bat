@@ -292,6 +292,8 @@ taskkill /f /t /im opera.exe
 
 taskkill /f /t /im tor.exe
 
+taskkill /f /t /im olk.exe
+
 taskkill /f /t /im Skype.exe
 
 taskkill /f /t /im SkypeApp.exe
