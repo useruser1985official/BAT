@@ -274,6 +274,8 @@ taskkill /f /t /im PPUninstaller.exe
 
 taskkill /f /t /im AutoSweep.exe
 
+taskkill /f /t /im SDbf2023.exe
+
 if /i %cach% neq S (
 goto cont
 )
