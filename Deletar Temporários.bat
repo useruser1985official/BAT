@@ -276,6 +276,8 @@ taskkill /f /t /im AutoSweep.exe
 
 taskkill /f /t /im SDbf2023.exe
 
+taskkill /f /t /im itopbfp23.exe
+
 if /i %cach% neq S (
 goto cont
 )
@@ -406,7 +408,10 @@ schtasks /delete /tn iTopVPN_Scheduler_eu /f
 
 schtasks /delete /tn iTopVPN_SkipUAC_eu /f
 
-schtasks /delete /tn iTopVPN_Update_eu /f
+schtasks /delete /tn "iTop BF Task (One-Time)" /f
+
+schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
+
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 

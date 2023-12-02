@@ -28,15 +28,13 @@ cd C:\Users\%username%\Desktop
 
 del /f JRT.txt
 
-del /f ZHPCleaner.lnk
-
-del /f ZHPCleaner.txt
+del /f ZHPCleaner*
 
 del /f kprm-*.txt
 
 cd C:\Users\%username%\Downloads
 
-del /f Adwcleaner_*.exe
+del /f Adwcleaner*.exe
 
 del /f Combofix.exe
 
