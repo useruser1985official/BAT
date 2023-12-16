@@ -262,6 +262,10 @@ taskkill /f /t /im GitHubDesktop.exe
 
 taskkill /f /t /im plugin-container.exe
 
+taskkill /f /t /im GameBar.exe
+
+taskkill /f /t /im GameBarFTServer.exe
+
 taskkill /f /t /im PubMonitor.exe
 
 taskkill /f /t /im PubPlatform.exe
@@ -275,6 +279,8 @@ taskkill /f /t /im PPUninstaller.exe
 taskkill /f /t /im AutoSweep.exe
 
 taskkill /f /t /im SDbf2023.exe
+
+taskkill /f /t /im SDxr2023.exe
 
 taskkill /f /t /im itopbfp23.exe
 
@@ -308,7 +314,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=d7wewrt2.default-release-1641919218397
+set firefoxest=wkyrty6n.default-release-1702506759851
 
 cls
 
@@ -412,7 +418,6 @@ schtasks /delete /tn "iTop BF Task (One-Time)" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
-
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 
 powercfg.exe /hibernate off
@@ -421,8 +426,12 @@ cls
 
 cd %programdata%
 
-if exist productdata (
-rmdir /s /q productdata
+if exist ProductData (
+rmdir /s /q ProductData
+)
+
+if exist ProductData3 (
+rmdir /s /q ProductData3
 )
 
 del /f /s /q %userprofile%\AppData\Local\CrashDumps

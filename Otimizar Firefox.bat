@@ -20,7 +20,7 @@ cls
 
 taskkill /f /t /im firefox.exe
 
-set firefoxest=d7wewrt2.default-release-1641919218397
+set firefoxest=wkyrty6n.default-release-1702506759851
 
 cd "C:\Projetos\HTML e JS\TesteArquivos\_arquivos"
 
