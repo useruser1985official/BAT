@@ -32,6 +32,10 @@ set /p upd=Deseja limpar o Windows Update? [S/N]
 
 cls
 
+set /p sih=Deseja reiniciar o Shell Infrastructure Host? [S/N] 
+
+cls
+
 net stop AdobeARMservice
 
 net stop PolicyAgent
@@ -466,6 +470,12 @@ del /f /a:h %localappdata%\IconCache.db
 del /s /q /f SoftwareDistribution\Download
 
 del /s /q /f servicing\LCU
+)
+
+if /i %sih%==S (
+taskkill /f /t /im sihost.exe
+
+start explorer.exe "C:\Aplicações\BAT Scripts"
 )
 
 echo.
