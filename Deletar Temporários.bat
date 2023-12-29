@@ -474,8 +474,6 @@ del /s /q /f servicing\LCU
 
 if /i %sih%==S (
 taskkill /f /t /im sihost.exe
-
-start explorer.exe "C:\Aplicações\BAT Scripts"
 )
 
 echo.
