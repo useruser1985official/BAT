@@ -224,6 +224,8 @@ taskkill /f /t /im httpd.exe
 
 taskkill /f /t /im mysqld.exe
 
+taskkill /f /t /im MySQLWorkbench.exe
+
 taskkill /f /t /im pgAdmin4.exe
 
 taskkill /f /t /im postgres.exe
