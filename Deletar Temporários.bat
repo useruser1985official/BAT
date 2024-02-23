@@ -190,6 +190,8 @@ taskkill /f /t /im Blend.exe
 
 taskkill /f /t /im devenv.exe
 
+taskkill /f /t /im VSIXConfigurationUpdater.exe
+
 taskkill /f /t /im sqlceip.exe
 
 taskkill /f /t /im sqlservr.exe
@@ -410,6 +412,10 @@ schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineCore /f
 
 schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineUA /f
 
+schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200} /f
+
+schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineUA{5B02D31F-F103-40DE-B1E7-05B4BD091E8C} /f
+
 schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
@@ -476,6 +482,12 @@ del /s /q /f servicing\LCU
 
 if /i %sih%==S (
 taskkill /f /t /im sihost.exe
+
+taskkill /f /t /im ASC.exe
+
+taskkill /f /t /im ASCTray.exe
+
+taskkill /f /t /im SmartDefrag.exe
 )
 
 echo.
