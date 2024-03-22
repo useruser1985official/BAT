@@ -198,6 +198,8 @@ taskkill /f /t /im sqlservr.exe
 
 taskkill /f /t /im sqlwriter.exe
 
+taskkill /f /t /im Ssms.exe
+
 taskkill /f /t /im ScenarioEngine.exe
 
 taskkill /f /t /im LandingPage.exe
@@ -502,6 +504,10 @@ echo O Prefetch foi limpo!
 
 if /i %upd%==S (
 echo O Windows Update foi limpo!
+)
+
+if /i %sih%==S (
+echo O Sihost foi reiniciado!
 )
 
 echo Operação Concluída com Êxito!
