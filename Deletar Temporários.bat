@@ -428,7 +428,9 @@ schtasks /delete /tn iTopVPN_Scheduler_eu /f
 
 schtasks /delete /tn iTopVPN_SkipUAC_eu /f
 
-schtasks /delete /tn "iTop BF Task (One-Time)" /f
+schtasks /delete /tn iTopVPN_Update_eu /f
+
+schtasks /delete /tn "iTop easter Task (One-Time)" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
