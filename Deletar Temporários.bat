@@ -124,6 +124,8 @@ taskkill /f /t /im AdobeARM.exe
 
 taskkill /f /t /im AcrobatNotificationClient.exe
 
+taskkill /f /t /im AdobeCollabSync.exe
+
 taskkill /f /t /im GoogleUpdate.exe
 
 taskkill /f /t /im GoogleCrashHandler.exe
