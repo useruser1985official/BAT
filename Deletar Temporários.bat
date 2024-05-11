@@ -326,7 +326,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=nyuc28zx.default-release-1712753846323
+set firefoxest=px1hkms2.default-release-1715381415954
 
 cls
 
