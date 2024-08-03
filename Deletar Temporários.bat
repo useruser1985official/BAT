@@ -434,6 +434,10 @@ schtasks /delete /tn iTopVPN_Update_eu /f
 
 schtasks /delete /tn "iTop easter Task (One-Time)" /f
 
+schtasks /delete /tn "iTop summer Task (One-Time)" /f
+
+schtasks /delete /tn "IObit SumSale2024 (One-Time)" /f
+
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
