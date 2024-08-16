@@ -60,7 +60,7 @@ del /f "C:\Users\Public\Desktop\IObit Uninstaller.lnk"
 
 cd "%appdata%\IObit"
 
-rmdir /s /q "Iobit Uninstaller"
+rmdir /s /q "IObit Uninstaller"
 
 cd "%appdata%\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu"
 
