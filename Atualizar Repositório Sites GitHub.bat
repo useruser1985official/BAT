@@ -19,15 +19,29 @@ exit
 cd "C:\Projetos\Git e GitHub"
 
 if exist ProjetosSitesCriados (
-xcopy /s /y "C:\Projetos\HTML e JS" "ProjetosSitesCriados\HTML e JS"
+cd ProjetosSitesCriados
 
-rmdir /s /q "C:\Projetos\Git e GitHub\ProjetosSitesCriados\HTML e JS\TesteArquivos"
+rmdir /s /q "HTML e JS"
 
-xcopy /s /y "C:\Projetos\JSF e JSP" "ProjetosSitesCriados\JSF e JSP"
+rmdir /s /q "JSF e JSP"
 
-xcopy /s /y "C:\xampp\htdocs" "ProjetosSitesCriados\PHP"
+rmdir /s /q "PHP"
 
-cd "C:\Projetos\Git e GitHub\ProjetosSitesCriados\PHP"
+mkdir "HTML e JS"
+
+mkdir "JSF e JSP"
+
+mkdir "PHP"
+
+xcopy /s /y "C:\Projetos\HTML e JS" "HTML e JS"
+
+rmdir /s /q "HTML e JS\TesteArquivos"
+
+xcopy /s /y "C:\Projetos\JSF e JSP" "JSF e JSP"
+
+xcopy /s /y "C:\xampp\htdocs" "PHP"
+
+cd "PHP"
 
 rmdir /s /q dashboard
 
