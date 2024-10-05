@@ -17,41 +17,85 @@ exit
 )
 
 if exist E: (
-xcopy /s /y "C:\Aplicações\Criptografia" "E:\Aplicações\Criptografia"
+rmdir /s /q "E:\Aplicações"
 
-xcopy /s /y "C:\Aplicações\Python Scripts" "E:\Aplicações\Python Scripts"
+rmdir /s /q "E:\Projetos"
 
-xcopy /s /y "C:\Projetos\Word" "E:\Projetos\Word"
+rmdir /s /q "E:\Documents"
 
-xcopy /s /y "C:\Users\eu\Documents\Office" "E:\Documentos\Office"
+rmdir /s /q "E:\Pictures"
 
-xcopy /s /y "C:\Users\eu\Documents\PDF" "E:\Documentos\PDF"
+rmdir /s /q "E:\Music"
 
-xcopy /s /y "C:\Users\eu\Pictures" "E:\Imagens"
+rmdir /s /q "E:\Videos"
 
-xcopy /s /y "C:\Users\eu\Music" "E:\Músicas"
+xcopy /e /y /i "C:\Aplicações\Criptografia" "E:\Aplicações\Criptografia"
 
-xcopy /s /y "C:\Users\eu\Videos\*.mp4" "E:\Vídeos"
+rmdir /s /q "E:\Aplicações\Criptografia\Arquivos Estenografados"
+
+xcopy /e /y /i "C:\Aplicações\Python Scripts" "E:\Aplicações\Python Scripts"
+
+xcopy /e /y /i "C:\Projetos\Word" "E:\Projetos\Word"
+
+rmdir /s /q "E:\Projetos\Word\Portfólio\Prints"
+
+xcopy /e /y /i "C:\Users\eu\Documents\Office" "E:\Documents\Office"
+
+xcopy /e /y /i "C:\Users\eu\Documents\PDF" "E:\Documents\PDF"
+
+xcopy /e /y /i "C:\Users\eu\Pictures" "E:\Pictures"
+
+xcopy /e /y /i "C:\Users\eu\Music" "E:\Music"
+
+rmdir /s /q "E:\Music\Playlists"
+
+xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "E:\Videos"
+
+rmdir /s /q "E:\Videos\Filmes"
+
+xcopy /e /y /i "C:\Users\eu\Videos\Filmes\Desenhos (Séries)" "E:\Videos\Desenhos (Séries)"
 
 cls
 
 echo Operação Concluída com Êxito!
 ) else if exist F: (
-xcopy /s /y "C:\Aplicações\Criptografia" "F:\Aplicações\Criptografia"
+rmdir /s /q "F:\Aplicações"
 
-xcopy /s /y "C:\Aplicações\Python Scripts" "F:\Aplicações\Python Scripts"
+rmdir /s /q "F:\Projetos"
 
-xcopy /s /y "C:\Projetos\Word" "F:\Projetos\Word"
+rmdir /s /q "F:\Documents"
 
-xcopy /s /y "C:\Users\eu\Documents\Office" "F:\Documentos\Office"
+rmdir /s /q "F:\Pictures"
 
-xcopy /s /y "C:\Users\eu\Documents\PDF" "F:\Documentos\PDF"
+rmdir /s /q "F:\Music"
 
-xcopy /s /y "C:\Users\eu\Pictures" "F:\Imagens"
+rmdir /s /q "F:\Videos"
 
-xcopy /s /y "C:\Users\eu\Music" "F:\Músicas"
+xcopy /e /y /i "C:\Aplicações\Criptografia" "F:\Aplicações\Criptografia"
 
-xcopy /s /y "C:\Users\eu\Videos\*.mp4" "F:\Vídeos"
+rmdir /s /q "F:\Aplicações\Criptografia\Arquivos Estenografados"
+
+xcopy /e /y /i "C:\Aplicações\Python Scripts" "F:\Aplicações\Python Scripts"
+
+xcopy /e /y /i "C:\Projetos\Word" "F:\Projetos\Word"
+
+rmdir /s /q "F:\Projetos\Word\Portfólio\Prints"
+
+xcopy /e /y /i "C:\Users\eu\Documents\Office" "F:\Documents\Office"
+
+xcopy /e /y /i "C:\Users\eu\Documents\PDF" "F:\Documents\PDF"
+
+xcopy /e /y /i "C:\Users\eu\Pictures" "F:\Pictures"
+
+xcopy /e /y /i "C:\Users\eu\Music" "F:\Music"
+
+rmdir /s /q "E:\Music\Playlists"
+
+xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "F:\Videos"
+
+rmdir /s /q "F:\Videos\Filmes"
+
+xcopy /e /y /i "C:\Users\eu\Videos\Filmes\Desenhos (Séries)" "F:\Videos\Desenhos (Séries)"
 
 cls
 

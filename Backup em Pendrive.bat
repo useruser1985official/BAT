@@ -17,15 +17,25 @@ exit
 )
 
 if exist E: (
-xcopy /s /y "C:\Aplicações" "E:\Aplicações"
+rmdir /s /q "E:\Aplicações"
 
-xcopy /s /y "C:\Backgrounds" "E:\Backgrounds"
+rmdir /s /q "E:\Backgrounds"
 
-xcopy /s /y "C:\Projetos" "E:\Projetos"
+rmdir /s /q "E:\Projetos"
 
-rmdir /s /q "E:\Projetos\ASP Net"
+rmdir /s /q "E:\Documents"
 
-rmdir /s /q "E:\Projetos\ASP Net"
+rmdir /s /q "E:\Pictures"
+
+rmdir /s /q "E:\Music"
+
+rmdir /s /q "E:\Videos"
+
+xcopy /e /y /i "C:\Aplicações" "E:\Aplicações"
+
+xcopy /e /y /i "C:\Backgrounds" "E:\Backgrounds"
+
+xcopy /e /y /i "C:\Projetos" "E:\Projetos"
 
 rmdir /s /q "E:\Projetos\ASP Net"
 
@@ -47,41 +57,69 @@ rmdir /s /q "E:\Projetos\Packet Tracer"
 
 rmdir /s /q "E:\Projetos\Perl"
 
-rmdir /s /q "E:\Projetos\Powershell"
-
 rmdir /s /q "E:\Projetos\Python"
 
 rmdir /s /q "E:\Projetos\QT com C++"
 
 rmdir /s /q "E:\Projetos\Ruby"
 
+rmdir /s /q "E:\Projetos\SQLite"
+
+rmdir /s /q "E:\Projetos\Temporários"
+
 rmdir /s /q "E:\Projetos\Windows"
 
 rmdir /s /q "E:\Projetos\Workbench"
 
-xcopy /s /y "C:\Users\eu\Documents" "E:\Documentos"
+xcopy /e /y /i "C:\xampp\htdocs" "E:\Projetos\htdocs"
 
-rmdir /s /q "E:\Projetos\Documentos\Imagens ISO"
+rmdir /s /q "E:\Projetos\htdocs\dashboard"
 
-xcopy /s /y "C:\Users\eu\Pictures" "E:\Imagens"
+rmdir /s /q "E:\Projetos\htdocs\img"
 
-xcopy /s /y "C:\Users\eu\Music" "E:\Músicas"
+rmdir /s /q "E:\Projetos\htdocs\webalizer"
 
-xcopy /s /y "C:\Users\eu\Videos\*.mp4" "E:\Vídeos"
+rmdir /s /q "E:\Projetos\htdocs\xampp"
+
+del /f "E:\Projetos\htdocs\applications.html"
+
+del /f "E:\Projetos\htdocs\bitnami.css"
+
+xcopy /e /y /i "C:\Users\eu\Documents" "E:\Documents"
+
+rmdir /s /q "E:\Documents\Imagens ISO"
+
+xcopy /e /y /i "C:\Users\eu\Pictures" "E:\Pictures"
+
+xcopy /e /y /i "C:\Users\eu\Music" "E:\Music"
+
+xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "E:\Videos"
+
+rmdir /s /q "E:\Videos\Filmes"
 
 cls
 
 echo Operação Concluída com Êxito!
 ) else if exist F: (
-xcopy /s /y "C:\Aplicações" "F:\Aplicações"
+rmdir /s /q "E:\Aplicações"
 
-xcopy /s /y "C:\Backgrounds" "F:\Backgrounds"
+rmdir /s /q "E:\Backgrounds"
 
-xcopy /s /y "C:\Projetos" "F:\Projetos"
+rmdir /s /q "E:\Projetos"
 
-rmdir /s /q "F:\Projetos\ASP Net"
+rmdir /s /q "E:\Documents"
 
-rmdir /s /q "F:\Projetos\ASP Net"
+rmdir /s /q "E:\Pictures"
+
+rmdir /s /q "E:\Music"
+
+rmdir /s /q "E:\Videos"
+
+xcopy /s /y /i "C:\Aplicações" "F:\Aplicações"
+
+xcopy /s /y /i "C:\Backgrounds" "F:\Backgrounds"
+
+xcopy /s /y /i "C:\Projetos" "F:\Projetos"
 
 rmdir /s /q "F:\Projetos\ASP Net"
 
@@ -103,27 +141,45 @@ rmdir /s /q "F:\Projetos\Packet Tracer"
 
 rmdir /s /q "F:\Projetos\Perl"
 
-rmdir /s /q "F:\Projetos\Powershell"
-
 rmdir /s /q "F:\Projetos\Python"
 
 rmdir /s /q "F:\Projetos\QT com C++"
 
 rmdir /s /q "F:\Projetos\Ruby"
 
+rmdir /s /q "F:\Projetos\SQLite"
+
+rmdir /s /q "F:\Projetos\Temporários"
+
 rmdir /s /q "F:\Projetos\Windows"
 
 rmdir /s /q "F:\Projetos\Workbench"
 
-xcopy /s /y "C:\Users\eu\Documents" "F:\Documentos"
+xcopy /e /y /i "C:\xampp\htdocs" "F:\Projetos\htdocs"
 
-rmdir /s /q "F:\Projetos\Documentos\Imagens ISO"
+rmdir /s /q "F:\Projetos\htdocs\dashboard"
 
-xcopy /s /y "C:\Users\eu\Pictures" "F:\Imagens"
+rmdir /s /q "F:\Projetos\htdocs\img"
 
-xcopy /s /y "C:\Users\eu\Music" "F:\Músicas"
+rmdir /s /q "F:\Projetos\htdocs\webalizer"
 
-xcopy /s /y "C:\Users\eu\Videos\*.mp4" "F:\Vídeos"
+rmdir /s /q "F:\Projetos\htdocs\xampp"
+
+del /f "F:\Projetos\htdocs\applications.html"
+
+del /f "F:\Projetos\htdocs\bitnami.css"
+
+xcopy /e /y /i "C:\Users\eu\Documents" "F:\Documents"
+
+rmdir /s /q "F:\Documents\Imagens ISO"
+
+xcopy /e /y /i "C:\Users\eu\Pictures" "F:\Pictures"
+
+xcopy /e /y /i "C:\Users\eu\Music" "F:\Music"
+
+xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "F:\Videos"
+
+rmdir /s /q "F:\Videos\Filmes"
 
 cls
 
