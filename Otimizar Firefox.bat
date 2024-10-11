@@ -22,7 +22,7 @@ taskkill /f /t /im firefox.exe
 
 set firefoxest=4cga0n00.default-release-1727959955967
 
-cd "C:\Projetos\HTML e JS\TesteArquivos\_arquivos"
+cd "C:\Projetos\HTML e JS\TesteArquivos\arquivos"
 
 copy /y prefs.js %userprofile%\AppData\Roaming\Mozilla\Firefox\Profiles\%firefoxest%
 
