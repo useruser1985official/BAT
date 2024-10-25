@@ -126,6 +126,8 @@ taskkill /f /t /im AcrobatNotificationClient.exe
 
 taskkill /f /t /im AdobeCollabSync.exe
 
+taskkill /f /t /im armsvc.exe
+
 taskkill /f /t /im GoogleUpdate.exe
 
 taskkill /f /t /im GoogleCrashHandler.exe
@@ -295,6 +297,8 @@ taskkill /f /t /im SDbf2023.exe
 taskkill /f /t /im SDxr2023.exe
 
 taskkill /f /t /im itopbfp23.exe
+
+taskkill /f /t /im ascnewl18.exe
 
 if /i %cach% neq S (
 goto cont
@@ -498,6 +502,8 @@ taskkill /f /t /im ASC.exe
 taskkill /f /t /im ASCTray.exe
 
 taskkill /f /t /im SmartDefrag.exe
+
+taskkill /f /t /im Photos.exe
 )
 
 echo.
