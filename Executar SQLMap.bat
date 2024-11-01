@@ -8,9 +8,17 @@ color 0A
 
 cls
 
-set sqlmap=python C:\Opcionais\sqlmap\sqlmap.py
+set /p atu=Deseja Atualizar o SQLMap primeiro? [S/N] 
+
+if /i %atu%==S (
+goto upd
+) else (
+cls
+)
 
 :cont
+
+set sqlmap=python C:\Opcionais\sqlmap\sqlmap.py
 
 %sqlmap%
 
@@ -33,3 +41,25 @@ goto cont
 ) else (
 exit
 )
+
+:upd
+
+:: Comando atualização
+
+cd C:\Opcionais
+
+rmdir /s /q sqlmap
+
+git clone https://github.com/sqlmapproject/sqlmap.git
+
+cls
+
+echo SQLMap Atualizado com Êxito!
+
+echo.
+
+pause
+
+cls
+
+goto cont
