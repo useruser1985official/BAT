@@ -112,6 +112,8 @@ net stop SQLWriter
 
 cls
 
+taskkill /f /t /im msiexec.exe
+
 taskkill /f /t /im setup.exe
 
 taskkill /f /t /im RdrCEF.exe
