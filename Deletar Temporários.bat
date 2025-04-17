@@ -146,6 +146,8 @@ taskkill /f /t /im java.exe
 
 taskkill /f /t /im javaw.exe
 
+taskkill /f /t /im javac.exe
+
 taskkill /f /t /im jmc.exe
 
 taskkill /f /t /im python.exe
@@ -155,6 +157,12 @@ taskkill /f /t /im pythonw.exe
 taskkill /f /t /im perl.exe
 
 taskkill /f /t /im ruby.exe
+
+taskkill /f /t /im node.exe
+
+taskkill /f /t /im kotlin.exe
+
+taskkill /f /t /im kotlinc.exe
 
 taskkill /f /t /im VBoxSDS.exe
 
@@ -219,6 +227,8 @@ taskkill /f /t /im SceneBuilder.exe
 taskkill /f /t /im pycharm64.exe
 
 taskkill /f /t /im studio64.exe
+
+taskkill /f /t /im idea64.exe
 
 taskkill /f /t /im fsnotifier.exe
 
@@ -297,6 +307,8 @@ taskkill /f /t /im AutoSweep.exe
 taskkill /f /t /im SDbf2023.exe
 
 taskkill /f /t /im SDxr2023.exe
+
+taskkill /f /t /im Reminder.exe
 
 taskkill /f /t /im itopbfp23.exe
 
