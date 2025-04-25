@@ -22,6 +22,8 @@ exit
 
 nmap -T4 -A -v 65.181.111.13
 
+nmap -T4 -A -v 77.37.42.156
+
 cls
 
 echo Operação Concluída com Êxito!

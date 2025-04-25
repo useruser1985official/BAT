@@ -74,6 +74,8 @@ net stop gupdate
 
 net stop gupdatem
 
+net stop GoogleChromeElevationService
+
 net stop edgeupdate
 
 net stop edgeupdatem
@@ -406,11 +408,13 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d 3 /f
 
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
+
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdatem /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService /v Start /t REG_DWORD /d 4 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService /v Start /t REG_DWORD /d 3 /f
 
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
@@ -466,12 +470,20 @@ cls
 
 cd %programdata%
 
+if exist BrightData (
+rmdir /s /q BrightData
+)
+
 if exist ProductData (
 rmdir /s /q ProductData
 )
 
 if exist ProductData3 (
 rmdir /s /q ProductData3
+)
+
+if exist Protexis64 (
+rmdir /s /q Protexis64
 )
 
 del /f /s /q %userprofile%\AppData\Local\CrashDumps
