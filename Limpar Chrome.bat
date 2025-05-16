@@ -44,7 +44,7 @@ schtasks /delete /tn GoogleUpdateTaskMachineCore /f
 
 schtasks /delete /tn GoogleUpdateTaskMachineUA /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem138.0.7156.0{CF6E4986-6089-4FD2-8788-713C8A60B759}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem138.0.7156.0{DFC1EAE1-F1E1-4408-B8BA-9A1A7493471A}" /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -59,10 +59,6 @@ start GoogleUpdater
 cd "%programfiles%/Google/Chrome/"
 
 start Application
-
-sc delete GoogleUpdaterInternalService138.0.7156.0
-
-sc delete GoogleUpdaterService138.0.7156.0
 
 echo.
 

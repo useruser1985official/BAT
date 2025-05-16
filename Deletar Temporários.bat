@@ -430,14 +430,6 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn GoogleUpdateTaskMachineCore /f
-
-schtasks /delete /tn GoogleUpdateTaskMachineUA /f
-
-schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineCore /f
-
-schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineUA /f
-
 schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200} /f
 
 schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineUA{5B02D31F-F103-40DE-B1E7-05B4BD091E8C} /f
