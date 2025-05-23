@@ -76,6 +76,10 @@ net stop gupdatem
 
 net stop GoogleChromeElevationService
 
+net stop GoogleUpdaterInternalService138.0.7156.0
+
+net stop GoogleUpdaterService138.0.7156.0
+
 net stop edgeupdate
 
 net stop edgeupdatem
@@ -409,6 +413,10 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService138.0.7156.0 /v Start /t REG_DWORD /d 3 /f
+
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService138.0.7156.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
