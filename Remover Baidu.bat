@@ -26,11 +26,11 @@ cls
 
 taskkill /f /t /im Baidu.exe
 
-cd C:/Program Files
+cd "C:/Program Files"
 
 rmdir /s /q Baidu
 
-cd C:/Program Files (x86)
+cd "C:/Program Files (x86)"
 
 rmdir /s /q Baidu
 
