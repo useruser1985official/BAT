@@ -4,7 +4,7 @@ chcp 1252
 
 title Limpar Chrome
 
-color a4
+color A4
 
 cls
 
