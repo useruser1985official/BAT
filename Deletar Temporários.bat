@@ -116,6 +116,8 @@ net stop SQLTELEMETRY$SQLEXPRESS01
 
 net stop SQLWriter
 
+net stop "OneDrive Updater Service"
+
 cls
 
 taskkill /f /t /im msiexec.exe
@@ -320,6 +322,8 @@ taskkill /f /t /im itopbfp23.exe
 
 taskkill /f /t /im ascnewl18.exe
 
+taskkill /f /t /im OneDrive.exe
+
 if /i %cach% neq S (
 goto cont
 )
@@ -400,6 +404,10 @@ reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v utweb /f
 
 reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v MicrosoftEdgeAutoLaunch_AF623091453CC2E58F15E4A702B7C681 /f
 
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
+
+reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
+
 :: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService18 /v Start /t REG_DWORD /d 3 /f
 
 :: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService18 /v DelayedAutoStart /t REG_DWORD /d 1 /f
@@ -463,6 +471,10 @@ schtasks /delete /tn "IObit SumSale2024 (One-Time)" /f
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
+
+schtasks /delete /f /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-3163686721-1003"
+
+schtasks /delete /f /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1003"
 
 powercfg.exe /hibernate off
 
