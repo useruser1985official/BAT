@@ -46,11 +46,9 @@ exit
 
 :: Comando atualização
 
-cd C:\Opcionais
+cd C:\Opcionais\sqlmap
 
-rmdir /s /q sqlmap
-
-git clone https://github.com/sqlmapproject/sqlmap.git
+git pull https://github.com/sqlmapproject/sqlmap.git master
 
 cls
 
