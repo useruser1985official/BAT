@@ -358,6 +358,8 @@ set firefoxest=ugltwie0.default-release-1738103026673
 
 cls
 
+del /f /s /q "%userprofile%\Downloads\*.part"
+
 del /f /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5"
 
 del /f /s /q "%systemdirectory%\config\systemprofile\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5"
