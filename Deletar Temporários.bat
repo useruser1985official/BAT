@@ -424,6 +424,8 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService140.0.7273.0 /v Start /t REG_DWORD /d 3 /f
+
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService138.0.7156.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService138.0.7156.0 /v Start /t REG_DWORD /d 3 /f
@@ -468,7 +470,7 @@ schtasks /delete /tn "iTop easter Task (One-Time)" /f
 
 schtasks /delete /tn "iTop summer Task (One-Time)" /f
 
-schtasks /delete /tn "IObit SumSale2024 (One-Time)" /f
+schtasks /delete /tn "IObit SUM2025Sale (One-time)" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
