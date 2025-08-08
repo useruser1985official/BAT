@@ -426,9 +426,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v S
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService140.0.7273.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService138.0.7156.0 /v Start /t REG_DWORD /d 3 /f
-
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService138.0.7156.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService140.0.7273.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -467,6 +465,8 @@ schtasks /delete /tn iTopVPN_SkipUAC_eu /f
 schtasks /delete /tn iTopVPN_Update_eu /f
 
 schtasks /delete /tn "iTop easter Task (One-Time)" /f
+
+schtasks /delete /tn "iTop Esumptr Task (One-Time)" /f
 
 schtasks /delete /tn "iTop summer Task (One-Time)" /f
 

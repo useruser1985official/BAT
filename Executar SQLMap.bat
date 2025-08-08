@@ -48,7 +48,9 @@ exit
 
 cd C:\Opcionais\sqlmap
 
-git pull https://github.com/sqlmapproject/sqlmap.git master
+git fetch https://github.com/sqlmapproject/sqlmap.git
+
+git pull https://github.com/sqlmapproject/sqlmap.git
 
 cls
 

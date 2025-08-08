@@ -32,9 +32,11 @@ net stop GoogleChromeElevationService
 
 net stop GoogleUpdaterInternalService140.0.7273.0
 
-net stop GoogleUpdaterInternalService138.0.7194.0
+net stop GoogleUpdaterService140.0.7273.0
 
-net stop GoogleUpdaterService138.0.7194.0
+sc delete GoogleUpdaterInternalService138.0.7194.0
+
+sc delete GoogleUpdaterService138.0.7194.0
 
 taskkill /f /t /im chrome.exe
 
@@ -52,8 +54,6 @@ schtasks /delete /tn GoogleUpdateTaskMachineUA /f
 
 schtasks /delete /tn "GoogleUpdaterTaskSystem140.0.7273.0{EC985D0C-B04C-4169-A0BA-27C6C262FDDF}" /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem138.0.7194.0{7C2DEC70-6B6A-4960-86F7-87058E2F6883}" /f
-
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d 3 /f
@@ -62,9 +62,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v S
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService140.0.7273.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService138.0.7194.0 /v Start /t REG_DWORD /d 3 /f
-
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService138.0.7194.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService140.0.7273.0 /v Start /t REG_DWORD /d 3 /f
 
 cd "%programfiles(x86)%/Google/"
 
