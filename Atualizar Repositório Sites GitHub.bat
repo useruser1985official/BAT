@@ -16,7 +16,7 @@ cls
 exit
 )
 
-cd "C:\Projetos\Git e GitHub"
+cd C:\Projetos\Git
 
 if exist ProjetosSitesCriados (
 cd ProjetosSitesCriados
@@ -73,7 +73,7 @@ echo.
 set /p limp=Deseja limpar a pasta de Projetos de Sites? [S/N] 
 
 if /i %limp%==S (
-cd "C:\Projetos\Git e GitHub\"
+cd C:\Projetos\Git
 
 rmdir /s /q "ProjetosSitesCriados"
 

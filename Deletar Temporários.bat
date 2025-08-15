@@ -466,7 +466,7 @@ schtasks /delete /tn iTopVPN_Update_eu /f
 
 schtasks /delete /tn "iTop easter Task (One-Time)" /f
 
-schtasks /delete /tn "iTop Esumptr Task (One-Time)" /f
+schtasks /delete /tn "iTop Esumprt Task (One-Time)" /f
 
 schtasks /delete /tn "iTop summer Task (One-Time)" /f
 
