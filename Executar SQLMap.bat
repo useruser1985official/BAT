@@ -63,3 +63,5 @@ pause
 cls
 
 goto cont
+
+:: rmdir /s /q %localappdata%\sqlmap
