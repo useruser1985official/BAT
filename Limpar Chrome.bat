@@ -30,15 +30,13 @@ net stop gupdatem
 
 net stop GoogleChromeElevationService
 
-net stop GoogleUpdaterInternalService140.0.7273.0
-
 net stop GoogleUpdaterInternalService141.0.7340.0
 
-net stop GoogleUpdaterService140.0.7273.0
+net stop GoogleUpdaterService141.0.7340.0
 
-sc delete GoogleUpdaterInternalService138.0.7194.0
+sc delete GoogleUpdaterInternalService140.0.7273.0
 
-sc delete GoogleUpdaterService138.0.7194.0
+sc delete GoogleUpdaterService140.0.7273.0
 
 taskkill /f /t /im chrome.exe
 
