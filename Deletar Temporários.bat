@@ -424,9 +424,9 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService141.0.7340.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService141.0.7376.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService141.0.7340.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService141.0.7376.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -448,9 +448,11 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200} /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem141.0.7376.0{AAECC201-FC32-4CA5-AFE6-48BD57474905}" /f
 
-schtasks /delete /tn MicrosoftEdgeUpdateTaskMachineUA{5B02D31F-F103-40DE-B1E7-05B4BD091E8C} /f
+schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
+
+schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineUA{5B02D31F-F103-40DE-B1E7-05B4BD091E8C}" /f
 
 schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
 
@@ -480,7 +482,7 @@ schtasks /delete /f /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-31
 
 schtasks /delete /f /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1003"
 
-powercfg.exe /hibernate off
+:: powercfg.exe /hibernate off
 
 cls
 
