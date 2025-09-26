@@ -510,6 +510,8 @@ del /f /s /q %userprofile%\AppData\Local\Microsoft\Windows\WebCache
 
 del /f /s /q %temp%
 
+rmdir /s /q %temp%\.
+
 cd/
 
 rmdir /s /q .Trash-1000
@@ -529,6 +531,8 @@ del /s /q /f Prefetch
 )
 
 del /s /q /f Temp
+
+rmdir /s /q Temp\.
 
 if /i %upd%==S (
 del /f /a:h %localappdata%\IconCache.db
