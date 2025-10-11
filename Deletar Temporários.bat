@@ -434,6 +434,8 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdatem /v Start /t REG_DWORD
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService /v Start /t REG_DWORD /d 3 /f
 
+reg add HKLM\SYSTEM\CurrentControlSet\Services\CCleaner7 /v Start /t REG_DWORD /d 3 /f
+
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
 schtasks /delete /tn "CCleaner Update" /f

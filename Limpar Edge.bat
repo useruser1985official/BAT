@@ -34,6 +34,8 @@ taskkill /f /t /im msedge.exe
 
 taskkill /f /t /im MicrosoftEdgeUpdate.exe
 
+taskkill /f /t /im msedgewebview2.exe
+
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdatem /v Start /t REG_DWORD /d 3 /f
