@@ -540,6 +540,8 @@ cd Temp
 
 rmdir /s /q .
 
+cd ..
+
 if /i %upd%==S (
 del /f /a:h %localappdata%\IconCache.db
 

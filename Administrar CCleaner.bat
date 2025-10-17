@@ -1,6 +1,6 @@
 @echo off
 
-color 04
+color 4b
 
 chcp 1252
 
