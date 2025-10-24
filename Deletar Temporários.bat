@@ -410,9 +410,9 @@ reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
 reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
-:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService18 /v Start /t REG_DWORD /d 3 /f
+:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService19 /v Start /t REG_DWORD /d 3 /f
 
-:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService18 /v DelayedAutoStart /t REG_DWORD /d 1 /f
+:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService19 /v DelayedAutoStart /t REG_DWORD /d 1 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\AdobeARMservice /v Start /t REG_DWORD /d 4 /f
 
@@ -483,6 +483,8 @@ schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 schtasks /delete /f /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-3163686721-1003"
 
 schtasks /delete /f /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1003"
+
+:: sc delete AdvancedSystemCareService18
 
 :: powercfg.exe /hibernate off
 
