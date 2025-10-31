@@ -16,7 +16,7 @@ pause
 
 cls
 
-set /p perg=Deseja Mesmo Remover os arquivos não deletados pelo Delfix? Execute esse BAT após executar ele! [S/N] 
+set /p perg=Deseja Mesmo Remover os arquivos não deletados pelo KpRm? Execute esse BAT após executar ele! [S/N] 
 
 if /i %perg% neq S (
 exit

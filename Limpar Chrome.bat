@@ -34,7 +34,7 @@ net stop GoogleUpdaterInternalService142.0.7416.0
 
 net stop GoogleUpdaterService142.0.7416.0
 
-sc delete GoogleUpdaterInternalService141.0.7376.0
+sc delete GoogleUpdaterInternalService142.0.7416.0
 
 sc delete GoogleUpdaterService141.0.7376.0
 
@@ -52,7 +52,7 @@ schtasks /delete /tn GoogleUpdateTaskMachineCore /f
 
 schtasks /delete /tn GoogleUpdateTaskMachineUA /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem142.0.7416.0{6A162B2B-AC17-4700-8535-6CB1C7974C3A}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem143.0.7482.0{2ED0EAA6-CF86-45BB-83F8-8F2C2C893185}" /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -60,7 +60,7 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService142.0.7416.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService143.0.7482.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService142.0.7416.0 /v Start /t REG_DWORD /d 3 /f
 

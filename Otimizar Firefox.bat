@@ -20,6 +20,10 @@ cls
 
 taskkill /f /t /im firefox.exe
 
+schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
+
+schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
+
 set firefoxest=ugltwie0.default-release-1738103026673
 
 cd "C:\Projetos\HTML e JS\TesteArquivos\arquivos"

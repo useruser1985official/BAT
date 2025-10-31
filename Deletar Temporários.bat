@@ -76,9 +76,9 @@ net stop gupdatem
 
 net stop GoogleChromeElevationService
 
-net stop GoogleUpdaterInternalService138.0.7156.0
+net stop GoogleUpdaterInternalService143.0.7482.0
 
-net stop GoogleUpdaterService138.0.7156.0
+net stop GoogleUpdaterService142.0.7416.0
 
 net stop edgeupdate
 
@@ -450,7 +450,7 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem141.0.7376.0{AAECC201-FC32-4CA5-AFE6-48BD57474905}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem143.0.7482.0{2ED0EAA6-CF86-45BB-83F8-8F2C2C893185}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
 

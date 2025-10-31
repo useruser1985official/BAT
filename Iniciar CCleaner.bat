@@ -8,6 +8,8 @@ title Administrando CCleaner
 
 cls
 
+taskkill /f /t /im CCleaner.exe
+
 net start CCleaner7
 
 exit
