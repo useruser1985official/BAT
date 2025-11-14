@@ -280,6 +280,8 @@ taskkill /f /t /im Wireshark.exe
 
 taskkill /f /t /im PacketTracer.exe
 
+taskkill /f /t /im "Wi-Fi Inspector.exe"
+
 taskkill /f /t /im visualg30.exe
 
 taskkill /f /t /im iTopVPN.exe
@@ -486,7 +488,7 @@ schtasks /delete /f /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163
 
 :: sc delete AdvancedSystemCareService18
 
-:: powercfg.exe /hibernate off
+powercfg.exe /hibernate off
 
 cls
 
