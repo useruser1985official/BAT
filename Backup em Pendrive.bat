@@ -37,7 +37,7 @@ xcopy /e /y /i "C:\Backgrounds" "E:\Backgrounds"
 
 xcopy /e /y /i "C:\Projetos" "E:\Projetos"
 
-rmdir /s /q "E:\Projetos\ASP Net"
+rmdir /s /q "E:\Projetos\ASP"
 
 rmdir /s /q "E:\Projetos\C"
 
@@ -45,11 +45,11 @@ rmdir /s /q "E:\Projetos\C#"
 
 rmdir /s /q "E:\Projetos\C++"
 
-rmdir /s /q "E:\Projetos\Git e Github"
+rmdir /s /q "E:\Projetos\Git"
 
 rmdir /s /q "E:\Projetos\Java"
 
-rmdir /s /q "E:\Projetos\Mobile Android"
+rmdir /s /q "E:\Projetos\Mobile"
 
 rmdir /s /q "E:\Projetos\Objective-C"
 
@@ -121,7 +121,7 @@ xcopy /s /y /i "C:\Backgrounds" "F:\Backgrounds"
 
 xcopy /s /y /i "C:\Projetos" "F:\Projetos"
 
-rmdir /s /q "F:\Projetos\ASP Net"
+rmdir /s /q "F:\Projetos\ASP"
 
 rmdir /s /q "F:\Projetos\C"
 
@@ -129,11 +129,11 @@ rmdir /s /q "F:\Projetos\C#"
 
 rmdir /s /q "F:\Projetos\C++"
 
-rmdir /s /q "F:\Projetos\Git e Github"
+rmdir /s /q "F:\Projetos\Git"
 
 rmdir /s /q "F:\Projetos\Java"
 
-rmdir /s /q "F:\Projetos\Mobile Android"
+rmdir /s /q "F:\Projetos\Mobile"
 
 rmdir /s /q "F:\Projetos\Objective-C"
 

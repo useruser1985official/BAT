@@ -21,23 +21,23 @@ cd C:\Projetos\Git
 if exist ProjetosSitesCriados (
 cd ProjetosSitesCriados
 
-rmdir /s /q "HTML e JS"
+rmdir /s /q "Front"
 
-rmdir /s /q "JSF e JSP"
+rmdir /s /q "JavaWeb"
 
 rmdir /s /q "PHP"
 
-mkdir "HTML e JS"
+mkdir "Front"
 
-mkdir "JSF e JSP"
+mkdir "JavaWeb"
 
 mkdir "PHP"
 
-xcopy /s /y "C:\Projetos\HTML e JS" "HTML e JS"
+xcopy /s /y "C:\Projetos\Front" "Front"
 
-rmdir /s /q "HTML e JS\TesteArquivos"
+rmdir /s /q "Front\TesteArquivos"
 
-xcopy /s /y "C:\Projetos\JSF e JSP" "JSF e JSP"
+xcopy /s /y "C:\Projetos\JavaWeb" "JavaWeb"
 
 xcopy /s /y "C:\xampp\htdocs" "PHP"
 
