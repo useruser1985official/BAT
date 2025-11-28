@@ -26,7 +26,7 @@ schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
 set firefoxest=ugltwie0.default-release-1738103026673
 
-cd "C:\Projetos\HTML e JS\TesteArquivos\arquivos"
+cd "C:\Projetos\Front\TesteArquivos\arquivos"
 
 copy /y prefs.js %userprofile%\AppData\Roaming\Mozilla\Firefox\Profiles\%firefoxest%
 
