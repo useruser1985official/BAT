@@ -24,7 +24,7 @@ schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
-set firefoxest=ugltwie0.default-release-1738103026673
+set firefoxest=sgnuwvjy.default-release-1764851499385
 
 cd "C:\Projetos\Front\TesteArquivos\arquivos"
 
@@ -89,7 +89,7 @@ cls
 
 taskkill /f /t /im firefox.exe
 
-del /f /s /q %userprofile%\AppData\Local\Mozilla\Firefox\Profiles\%firefoxest%\cache2\entries
+del /f /s /q %userprofile%\AppData\Local\Mozilla\Firefox\Profiles\%firefoxest%\Cache2
 
 del /f /s /q %userprofile%\AppData\Local\Mozilla\Firefox\Profiles\%firefoxest%\OfflineCache
 

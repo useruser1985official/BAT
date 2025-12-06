@@ -92,6 +92,8 @@ net stop MSSQL$SQLEXPRESS01
 
 net stop MSSQL$SQLEXPRESS02
 
+net stop MSSQL$SQLEXPRESS03
+
 net stop SQLSERVERAGENT
 
 net stop SQLEXPRESS
@@ -100,11 +102,15 @@ net stop SQLEXPRESS01
 
 net stop SQLEXPRESS02
 
+net stop SQLEXPRESS03
+
 net stop SQLAgent$SQLEXPRESS
 
 net stop SQLAgent$SQLEXPRESS01
 
 net stop SQLAgent$SQLEXPRESS02
+
+net stop SQLAgent$SQLEXPRESS03
 
 net stop SQLBrowser
 
@@ -356,7 +362,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=ugltwie0.default-release-1738103026673
+set firefoxest=sgnuwvjy.default-release-1764851499385
 
 cls
 
@@ -366,7 +372,7 @@ del /f /s /q "%userprofile%\AppData\Local\Microsoft\Windows\Temporary Internet F
 
 del /f /s /q "%systemdirectory%\config\systemprofile\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5"
 
-del /f /s /q %userprofile%\AppData\Local\Mozilla\Firefox\Profiles\%firefoxest%\cache2\entries
+del /f /s /q %userprofile%\AppData\Local\Mozilla\Firefox\Profiles\%firefoxest%\Cache2
 
 del /f %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\user.js
 
@@ -390,7 +396,9 @@ del /f /s /q "%userprofile%\AppData\Local\Google\Chrome\User Data\Default\Servic
 
 del /f /s /q "%userprofile%\AppData\Local\Google\Chrome\User Data\Default\File System"
 
-del /f /s /q "%userprofile%\AppData\Local\Opera Software\Opera Stable\cache"
+del /f /s /q "%userprofile%\AppData\Local\Opera Software\Opera Stable\Cache"
+
+del /f /s /q "%userprofile%\AppData\Local\Opera Software\Opera Stable\User Data\Default\Cache"
 
 del /f /s /q "%appdata%\Opera Software\Opera Stable\GPUCache"
 
@@ -426,9 +434,9 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService143.0.7482.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService144.0.7547.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService143.0.7482.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService144.0.7547.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -452,7 +460,7 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem143.0.7482.0{2ED0EAA6-CF86-45BB-83F8-8F2C2C893185}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem144.0.7547.0{2BB44611-FDFA-4C7B-809F-74ADFD208C7B}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
 

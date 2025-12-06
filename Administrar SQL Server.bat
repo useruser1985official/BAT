@@ -28,6 +28,8 @@ net start MSSQL$SQLEXPRESS01
 
 net start MSSQL$SQLEXPRESS02
 
+net start MSSQL$SQLEXPRESS03
+
 net start SQLSERVERAGENT
 
 net start SQLEXPRESS
@@ -36,11 +38,15 @@ net start SQLEXPRESS01
 
 net start SQLEXPRESS02
 
+net start SQLEXPRESS03
+
 net start SQLAgent$SQLEXPRESS
 
 net start SQLAgent$SQLEXPRESS01
 
 net start SQLAgent$SQLEXPRESS02
+
+net start SQLAgent$SQLEXPRESS03
 
 net start SQLBrowser
 
@@ -60,6 +66,8 @@ net stop MSSQL$SQLEXPRESS01
 
 net stop MSSQL$SQLEXPRESS02
 
+net stop MSSQL$SQLEXPRESS03
+
 net stop SQLSERVERAGENT
 
 net stop SQLEXPRESS
@@ -68,11 +76,15 @@ net stop SQLEXPRESS01
 
 net stop SQLEXPRESS02
 
+net stop SQLEXPRESS03
+
 net stop SQLAgent$SQLEXPRESS
 
 net stop SQLAgent$SQLEXPRESS01
 
 net stop SQLAgent$SQLEXPRESS02
+
+net stop SQLAgent$SQLEXPRESS03
 
 net stop SQLBrowser
 
