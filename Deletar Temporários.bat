@@ -466,7 +466,7 @@ schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineUA{5B02D31F-F103-40DE-B1E7-05B4BD091E8C}" /f
 
-schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
+schtasks /delete /tn "Firefox Background Update S-1-5-21-16109959-1652163829-3163686721-1003 308046B0AF4A39CB" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 

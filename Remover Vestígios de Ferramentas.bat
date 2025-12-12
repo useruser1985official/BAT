@@ -58,6 +58,10 @@ del /f kprm_*.exe
 
 rmdir /s /q SpyDetectFree
 
+cd C:\Users\%username%
+
+del /f ZHPCleaner*
+
 cd/
 
 del /f Combofix.txt

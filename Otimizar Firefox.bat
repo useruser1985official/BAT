@@ -20,7 +20,7 @@ cls
 
 taskkill /f /t /im firefox.exe
 
-schtasks /delete /tn "Firefox Background Update 308046B0AF4A39CB" /f
+schtasks /delete /tn "Firefox Background Update S-1-5-21-16109959-1652163829-3163686721-1003 308046B0AF4A39CB" /f
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
