@@ -124,6 +124,8 @@ net stop SQLWriter
 
 net stop "OneDrive Updater Service"
 
+net stop CCleaner7
+
 cls
 
 taskkill /f /t /im msiexec.exe
@@ -290,6 +292,8 @@ taskkill /f /t /im "Wi-Fi Inspector.exe"
 
 taskkill /f /t /im visualg30.exe
 
+taskkill /f /t /im CCleaner.exe
+
 taskkill /f /t /im iTopVPN.exe
 
 taskkill /f /t /im iTopVPNMini.exe
@@ -362,7 +366,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=ktnuotlf.default-release-1665954532169
+set firefoxest=bi4rpkzz.default-release-1768598038612
 
 cls
 
