@@ -318,6 +318,10 @@ taskkill /f /t /im PubPlatform.exe
 
 taskkill /f /t /im AutoUpdate.exe
 
+taskkill /f /t /im Reminder.exe
+
+taskkill /f /t /im ascevent.exe
+
 taskkill /f /t /im IObitLiveUpdate.exe
 
 taskkill /f /t /im PPUninstaller.exe
