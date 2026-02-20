@@ -126,6 +126,10 @@ net stop "OneDrive Updater Service"
 
 net stop CCleaner7
 
+net stop com.docker.service
+
+net stop WSLService
+
 cls
 
 taskkill /f /t /im msiexec.exe
@@ -308,6 +312,14 @@ taskkill /f /t /im GitHubDesktop.exe
 
 taskkill /f /t /im plugin-container.exe
 
+taskkill /f /t /im com.docker.build.exe
+
+taskkill /f /t /im docker-sandbox.exe
+
+taskkill /f /t /im wslservice.exe
+
+taskkill /f /t /im "Docker Desktop.exe"
+
 taskkill /f /t /im GameBar.exe
 
 taskkill /f /t /im GameBarFTServer.exe
@@ -423,6 +435,8 @@ reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v "CCleaner Smart
 reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v utweb /f
 
 reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v MicrosoftEdgeAutoLaunch_AF623091453CC2E58F15E4A702B7C681 /f
+
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Docker Desktop" /f
 
 reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
