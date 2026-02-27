@@ -312,6 +312,8 @@ taskkill /f /t /im GitHubDesktop.exe
 
 taskkill /f /t /im plugin-container.exe
 
+taskkill /f /t /im com.docker.backend.exe
+
 taskkill /f /t /im com.docker.build.exe
 
 taskkill /f /t /im docker-sandbox.exe
