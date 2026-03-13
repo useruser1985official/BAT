@@ -484,7 +484,7 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem144.0.7547.0{2BB44611-FDFA-4C7B-809F-74ADFD208C7B}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem147.0.7703.0{1E281C53-A71C-49F9-BD17-594CC6425EA2}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
 

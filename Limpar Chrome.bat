@@ -52,7 +52,7 @@ schtasks /delete /tn GoogleUpdateTaskMachineCore /f
 
 schtasks /delete /tn GoogleUpdateTaskMachineUA /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem144.0.7547.0{2BB44611-FDFA-4C7B-809F-74ADFD208C7B}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem147.0.7703.0{1E281C53-A71C-49F9-BD17-594CC6425EA2}" /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
 
