@@ -88,37 +88,17 @@ net stop MSSQLSERVER
 
 net stop MSSQL$SQLEXPRESS
 
-net stop MSSQL$SQLEXPRESS01
-
-net stop MSSQL$SQLEXPRESS02
-
-net stop MSSQL$SQLEXPRESS03
-
 net stop SQLSERVERAGENT
 
 net stop SQLEXPRESS
 
-net stop SQLEXPRESS01
-
-net stop SQLEXPRESS02
-
-net stop SQLEXPRESS03
-
 net stop SQLAgent$SQLEXPRESS
-
-net stop SQLAgent$SQLEXPRESS01
-
-net stop SQLAgent$SQLEXPRESS02
-
-net stop SQLAgent$SQLEXPRESS03
 
 net stop SQLBrowser
 
 net stop SQLTELEMETRY
 
 net stop SQLTELEMETRY$SQLEXPRESS
-
-net stop SQLTELEMETRY$SQLEXPRESS01
 
 net stop SQLWriter
 
@@ -402,6 +382,8 @@ del /f %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\invalidprefs.js
 
 rmdir /s /q %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\extensions\staged
 
+rmdir /s /q %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\extensions\trash
+
 del /f /s /q "%userprofile%\AppData\Local\Microsoft\Edge\User Data\Default\Cache"
 
 del /f /s /q "%userprofile%\AppData\Local\Microsoft\Edge\User Data\Default\GPUCache"
@@ -516,9 +498,11 @@ schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 
-schtasks /delete /f /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-3163686721-1003"
+schtasks /delete /f /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-3163686721-1008"
 
-schtasks /delete /f /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1003"
+schtasks /delete /f /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1008"
+
+schtasks /delete /f /tn "OneDrive Per-Machine Standalone Update Task"
 
 :: sc delete AdvancedSystemCareService18
 

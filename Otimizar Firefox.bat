@@ -81,6 +81,12 @@ rmdir /s /q extensions\staged & echo Diretório staged Deletado!
 echo Diretório staged Não Encontrado!
 )
 
+if exist extensions\trash (
+rmdir /s /q extensions\trash & echo Diretório trash Deletado!
+) else (
+echo Diretório trash Não Encontrado!
+)
+
 echo.
 
 set /p iniciar=Deseja iniciar o Firefox agora? [S/N] 
