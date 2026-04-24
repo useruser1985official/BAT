@@ -28,7 +28,29 @@ taskkill /f /t /im com.docker.backend.exe
 
 taskkill /f /t /im com.docker.build.exe
 
+taskkill /f /t /im com.docker.backend.exe
+
+taskkill /f /t /im com.docker.build.exe
+
+taskkill /f /t /im docker-agent.exe
+
+taskkill /f /t /im docker-ai.exe
+
+taskkill /f /t /im docker-buildx.exe
+
+taskkill /f /t /im docker-debug.exe
+
+taskkill /f /t /im docker-desktop.exe
+
+taskkill /f /t /im docker-dhi.exe
+
+taskkill /f /t /im docker-mcp.exe
+
 taskkill /f /t /im docker-sandbox.exe
+
+taskkill /f /t /im docker-scout.exe
+
+taskkill /f /t /im wsl.exe
 
 taskkill /f /t /im wslservice.exe
 

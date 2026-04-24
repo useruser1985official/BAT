@@ -292,11 +292,25 @@ taskkill /f /t /im GitHubDesktop.exe
 
 taskkill /f /t /im plugin-container.exe
 
-taskkill /f /t /im com.docker.backend.exe
+taskkill /f /t /im docker-agent.exe
 
-taskkill /f /t /im com.docker.build.exe
+taskkill /f /t /im docker-ai.exe
+
+taskkill /f /t /im docker-buildx.exe
+
+taskkill /f /t /im docker-debug.exe
+
+taskkill /f /t /im docker-desktop.exe
+
+taskkill /f /t /im docker-dhi.exe
+
+taskkill /f /t /im docker-mcp.exe
 
 taskkill /f /t /im docker-sandbox.exe
+
+taskkill /f /t /im docker-scout.exe
+
+taskkill /f /t /im wsl.exe
 
 taskkill /f /t /im wslservice.exe
 
@@ -333,6 +347,8 @@ taskkill /f /t /im itopbfp23.exe
 taskkill /f /t /im ascnewl18.exe
 
 taskkill /f /t /im OneDrive.exe
+
+taskkill /f /t /im OneDrive.Sync.Service.exe
 
 if /i %cach% neq S (
 goto cont
