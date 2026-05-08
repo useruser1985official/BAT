@@ -2,7 +2,7 @@
 
 chcp 1252
 
-title Atualizar Repositório de Projetos de Site no GitHub
+title Atualizar Repositório de Projetos de Sites no GitHub
 
 color 5F
 

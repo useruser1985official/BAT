@@ -102,6 +102,12 @@ del /f *.avif
 echo Nenhuma imagem .avif encontrada.
 )
 
+if exist *.heic (
+del /f *.heic
+) else (
+echo Nenhuma imagem .heic encontrada.
+)
+
 echo.
 
 echo Operação Realizada com Êxito!

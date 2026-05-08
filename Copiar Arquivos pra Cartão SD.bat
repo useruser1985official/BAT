@@ -49,11 +49,7 @@ xcopy /e /y /i "C:\Users\eu\Music" "E:\Music"
 
 rmdir /s /q "E:\Music\Playlists"
 
-xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "E:\Videos"
-
-rmdir /s /q "E:\Videos\Filmes"
-
-xcopy /e /y /i "C:\Users\eu\Videos\Filmes\Desenhos (Séries)" "E:\Videos\Desenhos (Séries)"
+xcopy /e /y /i "C:\Users\eu\Videos" "E:\Videos"
 
 cls
 
@@ -91,11 +87,7 @@ xcopy /e /y /i "C:\Users\eu\Music" "F:\Music"
 
 rmdir /s /q "E:\Music\Playlists"
 
-xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "F:\Videos"
-
-rmdir /s /q "F:\Videos\Filmes"
-
-xcopy /e /y /i "C:\Users\eu\Videos\Filmes\Desenhos (Séries)" "F:\Videos\Desenhos (Séries)"
+xcopy /e /y /i "C:\Users\eu\Videos" "F:\Videos"
 
 cls
 

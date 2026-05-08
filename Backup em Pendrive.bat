@@ -93,27 +93,25 @@ xcopy /e /y /i "C:\Users\eu\Pictures" "E:\Pictures"
 
 xcopy /e /y /i "C:\Users\eu\Music" "E:\Music"
 
-xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "E:\Videos"
-
-rmdir /s /q "E:\Videos\Filmes"
+xcopy /e /y /i "C:\Users\eu\Videos" "E:\Videos"
 
 cls
 
 echo Operação Concluída com Êxito!
 ) else if exist F: (
-rmdir /s /q "E:\Aplicações"
+rmdir /s /q "F:\Aplicações"
 
-rmdir /s /q "E:\Backgrounds"
+rmdir /s /q "F:\Backgrounds"
 
-rmdir /s /q "E:\Projetos"
+rmdir /s /q "F:\Projetos"
 
-rmdir /s /q "E:\Documents"
+rmdir /s /q "F:\Documents"
 
-rmdir /s /q "E:\Pictures"
+rmdir /s /q "F:\Pictures"
 
-rmdir /s /q "E:\Music"
+rmdir /s /q "F:\Music"
 
-rmdir /s /q "E:\Videos"
+rmdir /s /q "F:\Videos"
 
 xcopy /s /y /i "C:\Aplicações" "F:\Aplicações"
 
@@ -177,9 +175,7 @@ xcopy /e /y /i "C:\Users\eu\Pictures" "F:\Pictures"
 
 xcopy /e /y /i "C:\Users\eu\Music" "F:\Music"
 
-xcopy /e /y /i "C:\Users\eu\Videos\*.mp4" "F:\Videos"
-
-rmdir /s /q "F:\Videos\Filmes"
+xcopy /e /y /i "C:\Users\eu\Videos" "F:\Videos"
 
 cls
 
