@@ -55,6 +55,8 @@ taskkill /f /t /im wsl.exe
 taskkill /f /t /im wslservice.exe
 
 taskkill /f /t /im "Docker Desktop.exe"
+
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Docker Desktop" /f
 ) else (
 goto tent
 )

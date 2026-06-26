@@ -474,11 +474,21 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\CCleaner7 /v Start /t REG_DWORD /
 
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
-schtasks /delete /tn "CCleaner Update" /f
+schtasks /delete /tn "CCleaner 7 Update" /f
 
 schtasks /delete /tn CCleanerCrashReporting /f
 
 schtasks /delete /tn "CCleaner 7 BugReport" /f
+
+schtasks /delete /tn "CCleaner 7 - Scheduled Cleaning - default - S-1-5-21-16109959-1652163829-3163686721-1003" /f
+
+schtasks /delete /tn "CCleaner 7 - S-1-5-80-3880006512-4290199581-1648723128-3569869737-3631323133" /f
+
+schtasks /delete /tn "CCleaner 7 - S-1-5-80-1985561900-798682989-2213159822-1904180398-3434236965" /f
+
+schtasks /delete /tn "CCleaner 7 - S-1-5-21-16109959-1652163829-3163686721-1003" /f
+
+schtasks /delete /tn "CCleaner 7 - S-1-5-21-16109959-1652163829-3163686721-1008" /f
 
 schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
 
@@ -518,11 +528,15 @@ schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 
-schtasks /delete /f /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-3163686721-1008"
+schtasks /delete /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-3163686721-1003" /f
 
-schtasks /delete /f /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1008"
+schtasks /delete /tn "OneDrive Reporting Task-S-1-5-21-16109959-1652163829-3163686721-1008" /f
 
-schtasks /delete /f /tn "OneDrive Per-Machine Standalone Update Task"
+schtasks /delete /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1003" /f
+
+schtasks /delete /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686721-1008" /f
+
+schtasks /delete /tn "OneDrive Per-Machine Standalone Update Task" /f
 
 :: sc delete AdvancedSystemCareService18
 
