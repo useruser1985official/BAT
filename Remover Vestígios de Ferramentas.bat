@@ -50,6 +50,8 @@ del /f NPE.exe
 
 del /f rkill.exe
 
+del /f rkill64.exe
+
 del /f SpyDetectFree.zip
 
 del /f delfix_*.exe
@@ -57,6 +59,8 @@ del /f delfix_*.exe
 del /f kprm_*.exe
 
 rmdir /s /q SpyDetectFree
+
+rmdir /s /q ZHPCleaner
 
 cd C:\Users\%username%
 
