@@ -76,9 +76,9 @@ net stop gupdatem
 
 net stop GoogleChromeElevationService
 
-net stop GoogleUpdaterInternalService150.0.7863.0
+net stop GoogleUpdaterInternalService151.0.7910.0
 
-net stop GoogleUpdaterService150.0.7863.0
+net stop GoogleUpdaterService151.0.7910.0
 
 net stop edgeupdate
 
@@ -316,6 +316,8 @@ taskkill /f /t /im wsl.exe
 
 taskkill /f /t /im wslservice.exe
 
+taskkill /f /t /im msrdc.exe
+
 taskkill /f /t /im "Docker Desktop.exe"
 
 taskkill /f /t /im GameBar.exe
@@ -338,15 +340,15 @@ taskkill /f /t /im PPUninstaller.exe
 
 taskkill /f /t /im AutoSweep.exe
 
-taskkill /f /t /im SDbf2023.exe
+taskkill /f /t /im SDbf2026.exe
 
-taskkill /f /t /im SDxr2023.exe
+taskkill /f /t /im SDxr2026.exe
 
 taskkill /f /t /im Reminder.exe
 
-taskkill /f /t /im itopbfp23.exe
+taskkill /f /t /im itopbfp26.exe
 
-taskkill /f /t /im ascnewl18.exe
+taskkill /f /t /im ascnewl19.exe
 
 taskkill /f /t /im OneDrive.exe
 
@@ -442,9 +444,9 @@ reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
 reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService149.0.7814.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService150.0.7863.0 /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService149.0.7814.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService150.0.7863.0 /f
 
 :: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService19 /v Start /t REG_DWORD /d 3 /f
 
@@ -460,9 +462,9 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService150.0.7863.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService151.0.7910.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService150.0.7863.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService151.0.7910.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -498,7 +500,7 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem149.0.7814.0{17DEBCE5-9831-49FE-8762-76E79CFC308F}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem151.0.7910.0{B2C21143-EA00-4CAC-BA97-40E9C6BF0A2E}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
 
