@@ -76,9 +76,9 @@ net stop gupdatem
 
 net stop GoogleChromeElevationService
 
-net stop GoogleUpdaterInternalService151.0.7910.0
+net stop GoogleUpdaterInternalService152.0.7933.0
 
-net stop GoogleUpdaterService151.0.7910.0
+net stop GoogleUpdaterService152.0.7933.0
 
 net stop edgeupdate
 
@@ -231,6 +231,8 @@ taskkill /f /t /im pycharm64.exe
 taskkill /f /t /im studio64.exe
 
 taskkill /f /t /im idea64.exe
+
+taskkill /f /t /im jetbrainsd.exe
 
 taskkill /f /t /im fsnotifier.exe
 
@@ -444,9 +446,9 @@ reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
 reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService150.0.7863.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService151.0.7910.0 /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService150.0.7863.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService151.0.7910.0 /f
 
 :: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService19 /v Start /t REG_DWORD /d 3 /f
 
@@ -462,9 +464,9 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService151.0.7910.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService152.0.7933.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService151.0.7910.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService152.0.7933.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -500,11 +502,13 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem151.0.7910.0{B2C21143-EA00-4CAC-BA97-40E9C6BF0A2E}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem152.0.7933.0{1080C020-4001-4173-AB4B-84CC6E0D4E02}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineUA{5B02D31F-F103-40DE-B1E7-05B4BD091E8C}" /f
+
+schtasks /delete /tn "MicrosoftEdgeUpdateBrowserReplacementTask" /f
 
 schtasks /delete /tn "Firefox Background Update S-1-5-21-16109959-1652163829-3163686721-1003 308046B0AF4A39CB" /f
 
@@ -524,9 +528,7 @@ schtasks /delete /tn "iTop Esumprt Task (One-Time)" /f
 
 schtasks /delete /tn "iTop summer Task (One-Time)" /f
 
-schtasks /delete /tn "IObit SUM2025Sale (One-time)" /f
-
-schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
+schtasks /delete /tn "iTop VESMR2026 Task (One-Time)" /f
 
 schtasks /delete /tn CreateExplorerShellUnelevatedTask /f
 

@@ -30,13 +30,13 @@ net stop gupdatem
 
 net stop GoogleChromeElevationService
 
-net stop GoogleUpdaterInternalService151.0.7910.0
+net stop GoogleUpdaterInternalService152.0.7933.0
 
-net stop GoogleUpdaterService151.0.7910.0
+net stop GoogleUpdaterService152.0.7933.0
 
-sc delete GoogleUpdaterInternalService150.0.7863.0
+sc delete GoogleUpdaterInternalService151.0.7910.0
 
-sc delete GoogleUpdaterService150.0.7863.0
+sc delete GoogleUpdaterService151.0.7910.0
 
 taskkill /f /t /im chrome.exe
 
@@ -52,7 +52,7 @@ schtasks /delete /tn GoogleUpdateTaskMachineCore /f
 
 schtasks /delete /tn GoogleUpdateTaskMachineUA /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem151.0.7910.0{B2C21143-EA00-4CAC-BA97-40E9C6BF0A2E}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem152.0.7933.0{1080C020-4001-4173-AB4B-84CC6E0D4E02}" /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -60,13 +60,13 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService151.0.7910.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService152.0.7933.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService151.0.7910.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService152.0.7933.0 /v Start /t REG_DWORD /d 3 /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService150.0.7863.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService151.0.7910.0 /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService150.0.7863.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService151.0.7910.0 /f
 
 cd "%programfiles(x86)%/Google/"
 
@@ -74,7 +74,7 @@ start GoogleUpdater
 
 cd GoogleUpdater
 
-rmdir /s /q "150.0.7863.0"
+rmdir /s /q "151.0.7910.0"
 
 cd "%programfiles%/Google/Chrome/"
 
