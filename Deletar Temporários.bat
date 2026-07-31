@@ -386,7 +386,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=bi4rpkzz.default-release-1768598038612
+set firefoxest=gohm4b6n.default-release-1785495517560
 
 cls
 
@@ -542,9 +542,11 @@ schtasks /delete /tn "OneDrive Startup Task-S-1-5-21-16109959-1652163829-3163686
 
 schtasks /delete /tn "OneDrive Per-Machine Standalone Update Task" /f
 
+wsl --shutdown
+
 :: sc delete AdvancedSystemCareService18
 
-powercfg.exe /hibernate off
+:: powercfg.exe /hibernate off
 
 cls
 
