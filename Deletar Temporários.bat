@@ -370,6 +370,8 @@ taskkill /f /t /im firefox.exe
 
 taskkill /f /t /im chrome.exe
 
+taskkill /f /t /im elevation_service.exe
+
 taskkill /f /t /im opera.exe
 
 taskkill /f /t /im tor.exe
@@ -386,7 +388,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=gohm4b6n.default-release-1785495517560
+set firefoxest=tnr7fatd.default-release-1786127366872
 
 cls
 

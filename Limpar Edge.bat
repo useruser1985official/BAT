@@ -36,6 +36,8 @@ taskkill /f /t /im MicrosoftEdgeUpdate.exe
 
 taskkill /f /t /im msedgewebview2.exe
 
+taskkill /f /t /im elevation_service.exe
+
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineUA{5B02D31F-F103-40DE-B1E7-05B4BD091E8C}" /f
