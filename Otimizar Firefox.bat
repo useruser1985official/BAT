@@ -24,7 +24,7 @@ schtasks /delete /tn "Firefox Background Update S-1-5-21-16109959-1652163829-316
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
-set firefoxest=tnr7fatd.default-release-1786127366872
+set firefoxest=j26xnrz7.default-release
 
 cd "C:\Projetos\Front\TesteArquivos\arquivos"
 
