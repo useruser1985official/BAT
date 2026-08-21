@@ -318,6 +318,10 @@ taskkill /f /t /im wsl.exe
 
 taskkill /f /t /im wslservice.exe
 
+taskkill /f /t /im wslhost.exe
+
+taskkill /f /t /im wslrelay.exe
+
 taskkill /f /t /im msrdc.exe
 
 taskkill /f /t /im "Docker Desktop.exe"
@@ -388,7 +392,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=j26xnrz7.default-release
+set firefoxest=3gh98wib.default-release-1786966627484
 
 cls
 

@@ -24,7 +24,7 @@ schtasks /delete /tn "Firefox Background Update S-1-5-21-16109959-1652163829-316
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
-set firefoxest=j26xnrz7.default-release
+set firefoxest=3gh98wib.default-release-1786966627484
 
 cd "C:\Projetos\Front\TesteArquivos\arquivos"
 
@@ -114,7 +114,7 @@ cls
 cd "%programfiles%\Mozilla Firefox"
 
 if /i %iniciar% equ s (
-start firefox.exe about:memory about:addons & echo Firefox inicializado, minimize a memória dele. & echo.
+start firefox.exe about:addons & echo Firefox inicializado. & echo.
 )
 
 echo Clique em Qualquer Tecla pra Fechar!

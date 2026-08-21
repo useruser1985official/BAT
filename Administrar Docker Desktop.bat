@@ -54,6 +54,10 @@ taskkill /f /t /im wsl.exe
 
 taskkill /f /t /im wslservice.exe
 
+taskkill /f /t /im wslhost.exe
+
+taskkill /f /t /im wslrelay.exe
+
 taskkill /f /t /im msrdc.exe
 
 taskkill /f /t /im "Docker Desktop.exe"
