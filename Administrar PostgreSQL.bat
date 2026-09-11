@@ -20,9 +20,9 @@ cls
 set /p opc=Deseja iniciar ou parar o PostgreSQL? [I/P] 
 
 if /i %opc%==I (
-net start postgresql-x64-14
+net start postgresql-x64-18
 ) else if /i %opc%==P (
-net stop postgresql-x64-14
+net stop postgresql-x64-18
 
 taskkill /f /t /im pgAdmin4.exe
 

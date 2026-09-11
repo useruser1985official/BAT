@@ -38,9 +38,9 @@ del *.backup
 
 start %localappdata%/Programs/Opera
 
-schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
+schtasks /delete /tn "Opera scheduled Autoupdate 1788955799" /f
 
-schtasks /delete /tn "Opera scheduled assistant Autoupdate 1582737323" /f
+schtasks /delete /tn "Opera scheduled assistant Autoupdate 1788955806" /f
 
 echo.
 

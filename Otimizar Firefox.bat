@@ -24,7 +24,7 @@ schtasks /delete /tn "Firefox Background Update S-1-5-21-16109959-1652163829-316
 
 schtasks /delete /tn "Firefox Default Browser Agent 308046B0AF4A39CB" /f
 
-set firefoxest=3gh98wib.default-release-1786966627484
+set firefoxest=u9no87je.default-release
 
 cd "C:\Projetos\Front\TesteArquivos\arquivos"
 
@@ -85,6 +85,12 @@ if exist extensions\trash (
 rmdir /s /q extensions\trash & echo Diretório trash Deletado!
 ) else (
 echo Diretório trash Não Encontrado!
+)
+
+if exist extensions\ascsurfingprotectionnew@iobit.com.xpi (
+del /f extensions\ascsurfingprotectionnew@iobit.com.xpi & echo Extensão IObit Deletada!
+) else (
+echo Extensão IObit Não Encontrada!
 )
 
 echo.

@@ -58,7 +58,7 @@ net stop ssh-agent
 
 net stop sshd
 
-net stop postgresql-x64-14
+net stop postgresql-x64-18
 
 net stop RemoteRegistry
 
@@ -392,7 +392,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=3gh98wib.default-release-1786966627484
+set firefoxest=u9no87je.default-release
 
 cls
 
@@ -411,6 +411,8 @@ del /f %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\invalidprefs.js
 rmdir /s /q %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\extensions\staged
 
 rmdir /s /q %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\extensions\trash
+
+del /f /s /q %appdata%\Mozilla\Firefox\Profiles\%firefoxest%\extensions\ascsurfingprotectionnew@iobit.com.xpi
 
 del /f /s /q "%userprofile%\AppData\Local\Microsoft\Edge\User Data\Default\Cache"
 
@@ -462,7 +464,7 @@ reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService151.0.7910
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\AdobeARMservice /v Start /t REG_DWORD /d 4 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\postgresql-x64-14 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\postgresql-x64-18 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -500,9 +502,9 @@ schtasks /delete /tn "CCleaner 7 - S-1-5-21-16109959-1652163829-3163686721-1003"
 
 schtasks /delete /tn "CCleaner 7 - S-1-5-21-16109959-1652163829-3163686721-1008" /f
 
-schtasks /delete /tn "Opera scheduled Autoupdate 1559311787" /f
+schtasks /delete /tn "Opera scheduled Autoupdate 1788955799" /f
 
-schtasks /delete /tn "Opera scheduled assistant Autoupdate 1582737323" /f
+schtasks /delete /tn "Opera scheduled assistant Autoupdate 1788955806" /f
 
 schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
@@ -624,8 +626,6 @@ taskkill /f /t /im sihost.exe
 taskkill /f /t /im ASC.exe
 
 taskkill /f /t /im ASCTray.exe
-
-taskkill /f /t /im SmartDefrag.exe
 
 taskkill /f /t /im Photos.exe
 )

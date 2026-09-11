@@ -11,7 +11,7 @@ cls
 set /p opc=Deseja mesmo criar a pasta pra preparar o instalador? [S/N] 
 
 if /i %opc%==S (
-cd C:\Qt\Tools\QtInstallerFramework\4.3\examples\
+cd C:\Qt\Tools\QtInstallerFramework\4.11\examples\
 
 xcopy /E /C /H startmenu %userprofile%\Desktop\startmenu\
 
@@ -27,7 +27,7 @@ cls
 set /p opc=Deseja mesmo criar a pasta de debug pra deploy do programa? [S/N] 
 
 if /i %opc%==S (
-cd C:\Qt\6.2.2\mingw_64\
+cd C:\Qt\6.11.2\mingw_64\
 
 xcopy /E /C /H bin %userprofile%\Desktop\bin\
 
