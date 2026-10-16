@@ -164,6 +164,8 @@ reg delete HKCU\SOFTWARE\ZHP /f
 
 reg delete HKCU\SOFTWARE\Malwarebytes /f
 
+reg delete HKCU\Software\KpRm /f
+
 reg delete HKLM\SOFTWARE\Norton /f
 
 reg delete HKLM\SOFTWARE\Swearware /f

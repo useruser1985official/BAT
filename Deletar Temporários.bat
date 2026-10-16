@@ -76,9 +76,9 @@ net stop gupdatem
 
 net stop GoogleChromeElevationService
 
-net stop GoogleUpdaterInternalService152.0.7933.0
+net stop GoogleUpdaterInternalService157.0.8089.0
 
-net stop GoogleUpdaterService152.0.7933.0
+net stop GoogleUpdaterService157.0.8089.0
 
 net stop edgeupdate
 
@@ -454,9 +454,9 @@ reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
 reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService152.0.7933.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService156.0.8067.0 /f
 
-reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService152.0.7933.0 /f
+reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService156.0.8067.0 /f
 
 :: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService19 /v Start /t REG_DWORD /d 3 /f
 
@@ -472,9 +472,9 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\gupdatem /v Start /t REG_DWORD /d
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleChromeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService156.0.8067.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService157.0.8089.0 /v Start /t REG_DWORD /d 3 /f
 
-reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService156.0.8067.0 /v Start /t REG_DWORD /d 3 /f
+reg add HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService157.0.8089.0 /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdate /v Start /t REG_DWORD /d 3 /f
 
@@ -483,6 +483,8 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdatem /v Start /t REG_DWORD
 reg add HKLM\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService /v Start /t REG_DWORD /d 3 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\CCleaner7 /v Start /t REG_DWORD /d 3 /f
+
+reg add HKCU\SOFTWARE\Classes\CLSID\{018D5C66-4533-4307-9B53-224DE2ED1FE6} /v System.IsPinnedToNameSpaceTree /t REG_DWORD /d 0 /f
 
 schtasks /delete /tn "Adobe Acrobat Update Task" /f
 
@@ -510,7 +512,7 @@ schtasks /delete /tn S-1-5-21-16109959-1652163829-3163686721-1003 /f
 
 schtasks /delete /tn npcapwatchdog /f
 
-schtasks /delete /tn "GoogleUpdaterTaskSystem156.0.8067.0{B4CD330B-528C-430F-9B08-D44902D0B165}" /f
+schtasks /delete /tn "GoogleUpdaterTaskSystem157.0.8089.0{455838B4-F1BF-4C19-9C5F-87D94EFC6768}" /f
 
 schtasks /delete /tn "MicrosoftEdgeUpdateTaskMachineCore{D239C5E7-E368-49A8-8002-BF3A1C3DF200}" /f
 
