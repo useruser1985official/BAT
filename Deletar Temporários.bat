@@ -392,7 +392,7 @@ taskkill /f /t /im SkypeBridge.exe
 
 taskkill /f /t /im transmission-qt.exe
 
-set firefoxest=u9no87je.default-release
+set firefoxest=3rw0x4t0.default-release-1792262222969
 
 cls
 
@@ -458,9 +458,9 @@ reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService15
 
 reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService156.0.8067.0 /f
 
-:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService19 /v Start /t REG_DWORD /d 3 /f
+:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService20 /v Start /t REG_DWORD /d 3 /f
 
-:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService19 /v DelayedAutoStart /t REG_DWORD /d 1 /f
+:: reg add HKLM\SYSTEM\CurrentControlSet\Services\AdvancedSystemCareService20 /v DelayedAutoStart /t REG_DWORD /d 1 /f
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\AdobeARMservice /v Start /t REG_DWORD /d 4 /f
 
@@ -554,7 +554,7 @@ schtasks /delete /tn "OneDrive Per-Machine Standalone Update Task" /f
 
 wsl --shutdown
 
-:: sc delete AdvancedSystemCareService18
+:: sc delete AdvancedSystemCareService19
 
 :: powercfg.exe /hibernate off
 
