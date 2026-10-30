@@ -454,6 +454,12 @@ reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
 reg delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v OneDrive /f
 
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "MicrosoftEdgeAutoLaunch_AF623091453CC2E58F15E4A702B7C681" /f
+
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Opera Browser Assistant" /f
+
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Opera Stable" /f
+
 reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterInternalService156.0.8067.0 /f
 
 reg delete HKLM\SYSTEM\CurrentControlSet\Services\GoogleUpdaterService156.0.8067.0 /f

@@ -38,6 +38,10 @@ del *.backup
 
 start %localappdata%/Programs/Opera
 
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Opera Browser Assistant" /f
+
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Opera Stable" /f
+
 schtasks /delete /tn "Opera scheduled Autoupdate 1788955799" /f
 
 schtasks /delete /tn "Opera scheduled assistant Autoupdate 1788955806" /f

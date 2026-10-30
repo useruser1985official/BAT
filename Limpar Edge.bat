@@ -50,7 +50,11 @@ reg add HKLM\SYSTEM\CurrentControlSet\Services\edgeupdatem /v Start /t REG_DWORD
 
 reg add HKLM\SYSTEM\CurrentControlSet\Services\MicrosoftEdgeElevationService /v Start /t REG_DWORD /d 3 /f
 
-reg delete HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v MicrosoftEdgeAutoLaunch_AF623091453CC2E58F15E4A702B7C681 /f
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "MicrosoftEdgeAutoLaunch_AF623091453CC2E58F15E4A702B7C681" /f
+
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Opera Browser Assistant" /f
+
+reg delete HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v "Opera Stable" /f
 
 cd "%programfiles(x86)%/Microsoft/"
 
