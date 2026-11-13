@@ -32,21 +32,21 @@ start explorer.exe
 
 pause
 
-cd "%commonprogramfiles(x86)%\IObit"
+cd "%commonprogramfiles(x86)%"
 
-rmdir /s /q "Driver Booster"
+rmdir /s /q "IObit"
 
-cd "%programfiles(x86)%\IObit"
+cd "%programfiles(x86)%"
 
-rmdir /s /q "Driver Booster"
+rmdir /s /q "IObit"
 
-cd "%programdata%\IObit"
+cd "%programdata%"
 
-rmdir /s /q "Driver Booster"
+rmdir /s /q "IObit"
 
-cd "%userprofile%\Dados de Aplicativos\IObit"
+cd "%userprofile%\Dados de Aplicativos"
 
-rmdir /s /q "Driver Booster"
+rmdir /s /q "IObit"
 
 cd "%programdata%\Microsoft\Windows\Start Menu\Programs
 
@@ -54,13 +54,13 @@ rmdir /s /q "Driver Booster 10"
 
 del /f "C:\Users\Public\Desktop\Driver Booster 10.lnk"
 
-cd "%appdata%\IObit"
+cd "%appdata%"
 
-rmdir /s /q "Driver Booster"
+rmdir /s /q "IObit"
 
-reg delete "HKLM\SOFTWARE\Iobit\Driver Booster" /f
+reg delete "HKLM\SOFTWARE\Iobit" /f
 
-reg delete "HKLM\Software\Wow6432Node\IObit\Driver Booster" /f
+reg delete "HKLM\Software\Wow6432Node\IObit" /f
 
 schtasks /delete /f /tn "Driver Booster Scheduler"
 

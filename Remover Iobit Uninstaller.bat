@@ -34,21 +34,21 @@ start explorer.exe
 
 pause
 
-cd "%commonprogramfiles(x86)%\IObit"
+cd "%commonprogramfiles(x86)%"
 
-rmdir /s /q "Iobit Uninstaller"
+rmdir /s /q "IObit"
 
-cd "%programfiles(x86)%\IObit"
+cd "%programfiles(x86)%"
 
-rmdir /s /q "Iobit Uninstaller"
+rmdir /s /q "IObit"
 
-cd "%programdata%\IObit"
+cd "%programdata%"
 
-rmdir /s /q "Iobit Uninstaller"
+rmdir /s /q "IObit"
 
-cd "%userprofile%\Dados de Aplicativos\IObit"
+cd "%userprofile%\Dados de Aplicativos"
 
-rmdir /s /q "Iobit Uninstaller"
+rmdir /s /q "IObit"
 
 cd "%programdata%\Microsoft\Windows\Start Menu\Programs
 
@@ -58,15 +58,15 @@ del /f "IObit Uninstaller.lnk"
 
 del /f "C:\Users\Public\Desktop\IObit Uninstaller.lnk"
 
-cd "%appdata%\IObit"
+cd "%appdata%"
 
-rmdir /s /q "IObit Uninstaller"
+rmdir /s /q "IObit"
 
 cd "%appdata%\Microsoft\Internet Explorer\Quick Launch\User Pinned\StartMenu"
 
 del /f "Uninstall Programs.lnk"
 
-reg delete HKLM\SOFTWARE\Iobit\Uninstaller /f
+reg delete HKLM\SOFTWARE\Iobit /f
 
 reg delete "HKCR\Directory\shellex\ContextMenuHandlers\IObitUnstaler" /f
 
